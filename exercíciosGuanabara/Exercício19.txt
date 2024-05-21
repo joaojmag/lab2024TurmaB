@@ -1,0 +1,15 @@
+Algoritmo "carteiraTransito"
+Var
+   anoAtual, anoNasc, idade: inteiro
+Inicio
+      Escreva("Em qual ano estamos?")
+      Leia(anoAtual)
+      Escreva("Em qual ano você nasceu?")
+      Leia(anoNasc)
+      idade <- anoAtual - anoNasc
+      Se(idade >= 18) entao
+               Escreva("Sua idade é ", idade, " anos e você está apto a tirar carteira")
+      Senao
+               Escreva("Sua idade é ", idade, " anos e você não está apto a tirar carteira ainda")
+      FimSe
+Fimalgoritmo
