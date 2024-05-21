@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Algoritmo "primeiro"
 Var
 
@@ -6,3 +7,6 @@ Inicio
 
 
 Fimalgoritmo
+=======
+
+>>>>>>> 3fc94af57e67de33a54176833fa817558f175da6
