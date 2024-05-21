@@ -1,0 +1,17 @@
+Algoritmo "alunoAprovado"
+Var
+   nota1, nota2, media: real
+Inicio
+      Escreva("Digite sua primeira nota:")
+      Leia(nota1)
+      Escreva("Digite sua segunda nota:")
+      Leia(nota2)
+      media <- (nota1 + nota2) / 2
+      Escreval("Média: ", media)
+      Se(media >= 7) entao
+               Escreva("Aluno aprovado")
+      Senao
+               Escreva("Aluno reprovado")
+      FimSe
+
+Fimalgoritmo
