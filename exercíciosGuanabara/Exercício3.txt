@@ -1,0 +1,10 @@
+Algoritmo "nome"
+Var
+  nome: caractere
+Inicio
+  Escreva("Escreva seu nome: ")
+  Leia(nome)
+  Escreva("Muito prazer ", nome)
+
+
+Fimalgoritmo
