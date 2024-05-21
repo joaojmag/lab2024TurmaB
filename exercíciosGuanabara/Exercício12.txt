@@ -1,0 +1,9 @@
+Algoritmo "creuzaTemp"
+Var
+   tempF, tempC: real
+Inicio
+      Escreva("Qual a temperatura em Farenheit?")
+      Leia(tempF)
+      tempC <- (tempF - 32) / 1.8
+      Escreva("A temperatura ", tempF, " equivale a ", tempC:4:1, " graus celcius")
+Fimalgoritmo
