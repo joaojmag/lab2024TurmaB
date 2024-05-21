@@ -1,0 +1,14 @@
+Algoritmo "creuzaEmprestimo"
+Var
+   valorEmp, valorTotal, valorParcela: real
+   nParcelas: inteiro
+Inicio
+      Escreva("Qual valor você pretende pegar de empréstimo?")
+      Leia(valorEmp)
+      Escreva("Em quantas parcelas você irá dividir?")
+      Leia(nParcelas)
+      valorTotal <- ((valorEmp * 20) /100) + valorEmp
+      valorParcela <- valorTotal / nParcelas
+      Escreva("Caso você pegue ", valorEmp:5:2, " reais emprestados do banco, pagará ", valorTotal:5:2, " reais. Esse valor, parcelado em ", nParcelas, " vezes, ficará ", valorParcela:5:2, " reais por mês")
+
+Fimalgoritmo
