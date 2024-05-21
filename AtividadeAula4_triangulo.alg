@@ -1,16 +1,18 @@
 algoritmo "SeuTrianguloeEquilatero?"
 var
    ld1, ld2, ld3: real
-   Eq, Es: logico
+   Eq, Es, tri: logico
 inicio
    escreval ("Qual o valor do primeiro lado? ")
    leia (ld1)
    escreval ("Qual o valor do segundo lado? ")
    leia (ld2)
    escreval ("Qual o valor do terceiro lado? ")
-   leia (ld3)
+   leia (ld3) 
+   tri <- (ld1 < ld2 + ld3) e (ld2 < ld1 + ld3) e (ld3 < ld1 + ld2) 
    Eq <- (ld1 = ld2) e (ld2 = ld3)
    Es <- (ld1 <> ld2) e (ld2 <> ld3)
+   escreval ("Pode formar um TRIANGULO? ", tri) 
    escreval ("O triangulo é EQUILATERO? ", Eq)
    escreval ("O triangulo é ESCALENO? ", Es)
 fimalgoritmo
