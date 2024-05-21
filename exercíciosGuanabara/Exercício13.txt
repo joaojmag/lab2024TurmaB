@@ -1,0 +1,9 @@
+Algoritmo "creuzaMuambas"
+Var
+   valorDolar, imposto: real
+Inicio
+      Escreva("Qual o preço do produto em dólares?")
+      Leia(valorDolar)
+      imposto <- (valorDolar*60) / 100
+      Escreva("O valor do imposto sobre o produto será de ", imposto:5:2, " dólares")
+Fimalgoritmo
