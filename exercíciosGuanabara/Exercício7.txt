@@ -1,0 +1,10 @@
+Algoritmo "comparações"
+Var
+  a, b, c: inteiro
+Inicio
+  A <- 4
+  B <- 5
+  C <- 1
+  Escreva(A < B)
+
+Fimalgoritmo
