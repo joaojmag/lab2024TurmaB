@@ -1,0 +1,12 @@
+Algoritmo "media"
+Var
+  numero1, numero2, media: real
+Inicio
+  Escreva("Seja bem-vindo! Realize a média de dois números. Digite o primeiro número:")
+  Leia(numero1)
+  Escreva("Agora digite o segundo número")
+  Leia(numero2)
+  media <- (numero1 + numero2) / 2
+  Escreva("O resultado da média entre os números ", numero1, " e ", numero2, " é ", media)
+
+Fimalgoritmo
