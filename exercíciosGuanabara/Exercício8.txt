@@ -1,0 +1,10 @@
+Algoritmo "operadores lógicos"
+Var
+  a, b, c: inteiro
+Inicio
+  a <- 4
+  b <- 5
+  c <- 1
+  Escreva(nao(a < b) ou (c > a))
+
+Fimalgoritmo
