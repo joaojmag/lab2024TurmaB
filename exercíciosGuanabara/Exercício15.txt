@@ -1,0 +1,16 @@
+Algoritmo "idadeComFrase"
+Var
+   anoatual, anoNasc, idade: inteiro
+Inicio
+      Escreva("Qual o ano em que você nasceu?")
+      Leia(anoNasc)
+      Escreva("Qual ano estamos")
+      Leia(anoAtual)
+      idade <- anoAtual - anoNasc
+      Escreva("Neste ano de ", anoAtual, " você fez ou fará ", idade, " anos,")
+      Se(idade >= 18) entao
+               Escreval("e já terá atingido a maioridade")
+      Senao
+               Escreva("e não terá atingido a maioridade ainda")
+      FimSe
+Fimalgoritmo
