@@ -1,0 +1,12 @@
+Algoritmo "soma"
+Var
+  numero1, numero2, soma: real
+Inicio
+  Escreva("Seja bem-vindo! Realize a soma de dois números. Digite o primeiro número que deseja somar:")
+  Leia(numero1)
+  Escreva("Agora digite o segundo número")
+  Leia(numero2)
+  soma <- numero1 + numero2
+  Escreva("O resultado da soma entre os números ", numero1, " e ", numero2, " é ", soma)
+
+Fimalgoritmo
