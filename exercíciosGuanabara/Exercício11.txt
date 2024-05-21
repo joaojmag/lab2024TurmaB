@@ -1,0 +1,11 @@
+Algoritmo "creuzaDolares"
+Var
+   cambio, valorReal, valorDolares: real
+Inicio
+      Escreva("Qual o valor do câmbio de hoje?")
+      Leia(cambio)
+      Escreva("Quanto você possui em real?")
+      Leia(valorReal)
+      valorDolares <- valorReal / cambio
+      Escreva("Trocando ", valorReal," reais por dólares hoje, você terá ", valorDolares, " dólares")
+Fimalgoritmo
