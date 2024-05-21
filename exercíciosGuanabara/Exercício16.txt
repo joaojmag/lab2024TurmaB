@@ -1,0 +1,12 @@
+Algoritmo "partiuDisney"
+Var
+   valorViagem: real
+Inicio
+      Escreva("Quanto você tem disponível para a viagem?")
+      Leia(valorViagem)
+      Se(valorViagem >= 10000) entao
+              Escreva("Partiu Disney")
+      Senao
+              Escreva("Viagem cancelada!")
+      FimSe
+Fimalgoritmo
