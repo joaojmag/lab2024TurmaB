@@ -1,0 +1,23 @@
+algoritmo "CalculadoraParaDivisao"
+var
+   n1, n2, r: real
+inicio
+   escreval ("Vamos dividir?")
+   escreval ("Escolha um numero: ")
+   leia (n1)
+   escreval ("Escolha por qual numero vc quer dividir: ")
+   leia (n2)
+   r <- n1 / n2
+   escreval ("O resultado da divisão é:", r)
+   escreval ("Quer tirar a prova? ")
+   escreval ("Digite o resultado da divisão ")
+   leia (r)
+   escreval ("Digite agr o segundo numero que voce digitou")
+   leia (n2)
+   n1 <- r * n2
+   escreva ("Se o primeiro número que vc escolheu é ", (n1), ", esta tudo certo! ")
+   
+
+
+
+fimalgoritmo
