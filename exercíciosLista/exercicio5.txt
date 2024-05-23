@@ -1,0 +1,14 @@
+Algoritmo "mediaNota"
+
+Var
+nota1, nota2, media: real
+
+Inicio
+      Escreval("Escreva sua primeira nota:")
+      Leia(nota1)
+      Escreval("Escreva sua segunda nota:")
+      Leia(nota2)
+      media <- (nota1 + nota2) / 2
+      Escreval("A média entre ", nota1, " e ", nota2, " é igual a ", media:5:2)
+
+Fimalgoritmo
