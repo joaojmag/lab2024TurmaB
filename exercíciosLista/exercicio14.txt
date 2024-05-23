@@ -1,0 +1,15 @@
+Algoritmo "locadoraCarros"
+
+Var
+kmPerc, valorDia, valorKm, valorTotal: real
+quantidadeDias: inteiro
+Inicio
+      Escreval("Qual foi a quilometragem rodada no carro?")
+      Leia(kmPerc)
+      Escreval("Quantos dias ficou com o carro?")
+      Leia(quantidadeDias)
+      valorDia <- quantidadeDias * 90
+      valorKm <- kmPerc * 0.20
+      valorTotal <- valorKm + valorDia
+      Escreval("O valor total a ser pago será de ", valorTotal, " reais")
+Fimalgoritmo
