@@ -1,0 +1,38 @@
+Algoritmo "imcEvoluido"
+
+Var
+   peso, altura, imc: real
+
+Inicio
+   Escreval("Escreva sua altura")
+   Leia(altura)
+   Escreval("Escreva seu peso")
+   Leia(peso)
+   imc <- peso / (altura^2)
+   Se(imc < 17)entao
+      Escreval("Seu IMC é: ", imc, " e você está muito abaixo do peso")
+   Senao
+      Se(imc >= 17) e (imc < 18.5)entao
+         Escreval("Seu imc é: ", imc, " e você está abaixo do peso")
+      Senao
+         Se(imc >= 18.5) e (imc < 25)entao
+            Escreval("Seu imc é: ", imc, " e você está no peso ideal")
+         Senao
+            Se(imc >= 25) e (imc < 30)entao
+               Escreval("Seu imc é: ", imc, " e você está com sobrepeso")
+            Senao
+               Se(imc >= 30) e (imc < 35)entao
+                  Escreval("Seu imc é: ", imc, " e você está com obesidade")
+               Senao
+                  Se(imc >= 35) e (imc < 40)entao
+                     Escreval("Seu imc é: ", imc, " e você está com obesidade severa")
+                  Senao
+                     Escreval("Seu imc é: ", imc, " e você está com obesidade mórbida")
+                  FimSe
+               FimSe
+            FimSe
+         FimSe
+      FimSe
+   FimSe
+
+Fimalgoritmo
