@@ -1,0 +1,23 @@
+Algoritmo "mediaEvoluido"
+
+Var
+ nota1, nota2, media: real
+
+Inicio
+      Escreval("Digite sua primeira nota")
+      Leia(nota1)
+      Escreval("Digite sua segunda nota")
+      Leia(nota2)
+      media <- (nota1 + nota2) / 2
+      Se(media >= 7) entao
+         Escreval("Aluno APROVADO, média ", media)
+      Senao
+           Se(media < 7) e (media > 5)entao
+              Escreval("Aluno em RECUPERAÇÃO, média: ", media)
+           Senao
+              Escreval("Aluno REPROVADO, média: ", media)
+           FimSe
+      FimSe
+
+
+Fimalgoritmo
