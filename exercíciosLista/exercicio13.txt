@@ -1,0 +1,11 @@
+Algoritmo "reajusteSalario"
+
+Var
+salario, reajuste, novoSalario: real
+Inicio
+      Escreval("Qual o seu salário atual?")
+      Leia(salario)
+      reajuste <- 15
+      novoSalario <- salario + ((reajuste * salario) / 100)
+      Escreval("Com 15% de aumento, seu novo salário será: ", novoSalario, " reais")
+Fimalgoritmo
