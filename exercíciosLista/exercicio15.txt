@@ -1,0 +1,12 @@
+Algoritmo "salario"
+
+Var
+diasTrabalhados: inteiro
+salarioMes: real
+
+Inicio
+      Escreval("Quantos dias você trabalhou no mês?")
+      Leia(diasTrabalhados)
+      salarioMes <- (diasTrabalhados * 8) * 25
+      Escreval("Seu salário desse mês será", salarioMes, " reais")
+Fimalgoritmo
