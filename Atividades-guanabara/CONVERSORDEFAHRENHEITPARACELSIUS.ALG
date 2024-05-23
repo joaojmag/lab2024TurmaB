@@ -7,5 +7,5 @@ inicio
       leia (F)
       C <- (F-32) / 1.8
       escreva (F, "° fahrenheit são o mesmo que ", C:4:1, "° celcius")
-      
+
 fimalgoritmo
