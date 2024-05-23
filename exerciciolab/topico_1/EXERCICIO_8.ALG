@@ -11,7 +11,11 @@ Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
 escreva("digite uma distancia em metros: ")
 leia(m)
+escreval(" isso em decametros dá ",m/10,"dam")
 escreval(" isso em hectometros dá ",m/100,"hm")
 escreval(" isso em kilometros dá ",m/1000,"km")
+escreval(" isso em decimetros dá ",m*10,"dm")
+escreval(" isso em centimetros dá ",m*100,"cm")
+escreval(" isso em milimetros dá ",m*1000,"mm")
 
 Fimalgoritmo
