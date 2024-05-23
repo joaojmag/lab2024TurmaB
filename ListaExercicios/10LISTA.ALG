@@ -7,7 +7,7 @@ Escreva("Escreva a largura da parede: ")
 Leia(Largura)
 Escreva("Escreva a altura da parede: ")
 Leia(Altura)
-Total<- Altura*Largura
+Total<- (Altura*Largura)²
 Escreval("O total a ser pintado por metro quadrado e: ")
 Escreval(Total, " Total m2, e litro " ,Total ,"L")
 
