@@ -1,0 +1,14 @@
+Algoritmo "fumantes"
+
+Var
+qtdCigarro, anos: inteiro
+perdeuDias: real
+
+Inicio
+      Escreval("Quantos cigarros você fumava por dia?")
+      Leia(qtdCigarro)
+      Escreval("Quantos anos você fumou?")
+      Leia(anos)
+      perdeuDias <- ((qtdCigarro * (anos * 365)) * 10) / 1440
+      Escreval("Você perdeu aproximadamente ", perdeuDias:4:0, " dias de vida")
+Fimalgoritmo
