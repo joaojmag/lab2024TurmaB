@@ -1,0 +1,14 @@
+Algoritmo "soma"
+
+Var
+numero1, numero2, soma: real
+
+Inicio
+      Escreval("Escreva o primeiro número que deseja somar:")
+      Leia(numero1)
+      Escreval("Escreva o segundo número que deseja somar:")
+      Leia(numero2)
+      soma <- numero1 + numero2
+      Escreval("A soma entre ", numero1, " e ", numero2, " é igual a ", soma)
+
+Fimalgoritmo
