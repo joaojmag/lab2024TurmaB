@@ -7,7 +7,7 @@ escreval("Escreva à altura da sua parede: ")
 leia(altura)
 escreval("Escreva à largura da sua parede: ")
 leia(largura)
-area <- altura x largura
+area <- altura * largura
 litros <- area / 2
 escreva("Você vai usar ",litros," litros para pintar toda a parede")
 fimalgoritmo
