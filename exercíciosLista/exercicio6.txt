@@ -1,0 +1,14 @@
+Algoritmo "antecessorSucessor"
+
+Var
+numero, antecessor, sucessor: inteiro
+
+Inicio
+      Escreval("Escreva o número que deseja saber o antecessor e o sucessor:")
+      Leia(numero)
+      sucessor <- numero + 1
+      antecessor <- numero - 1
+      Escreval("O antecessor de ", numero, " é ", antecessor)
+      Escreval("O sucessor de ", numero, " é ", sucessor)
+
+Fimalgoritmo
