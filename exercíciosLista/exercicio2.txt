@@ -1,0 +1,12 @@
+Algoritmo "nome"
+
+Var
+nome: caractere
+
+Inicio
+      Escreval("Olá, qual é seu nome?")
+      Leia(nome)
+      Escreval("Olá ", nome, ", é um prazer te conhecer")
+
+
+Fimalgoritmo
