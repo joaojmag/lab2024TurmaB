@@ -12,7 +12,7 @@ Inicio
 escreva("o valor do seu produto")
 leia(n1)
 n2 <-n1/100
-n3 <- n1-(n2*15)
+n3 <- n1-(n2*5)
 escreval(" o preço com a promoção fica :",n3," reais")
 
 Fimalgoritmo
