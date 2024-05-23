@@ -1,0 +1,12 @@
+Algoritmo "dinheiroCarteira"
+
+Var
+dinheiro, dolares: real
+
+Inicio
+      Escreval("Quanto de dinheiro você tem na carteira?")
+      Leia(dinheiro)
+      dolares <- dinheiro / 3.45
+      Escreval("Com ", dinheiro, " reais, você pode comprar ", dolares, " dolares")
+
+Fimalgoritmo
