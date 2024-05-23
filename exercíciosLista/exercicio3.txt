@@ -1,0 +1,17 @@
+Algoritmo "nomeSalario"
+
+Var
+nome: caractere
+salario: real
+
+Inicio
+      Escreval("Olá, qual é seu nome?")
+      Leia(nome)
+      Escreval("Qual seu salário mensal?")
+      Leia(salario)
+      Escreval("Nome funcionário: ", nome)
+      Escreval("Salário: R$", salario:7:2)
+      Escreval("O/A funcionário(a) ", nome, " tem um salário de R$", salario:7:2, " reais")
+
+
+Fimalgoritmo
