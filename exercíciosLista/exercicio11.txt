@@ -1,0 +1,17 @@
+Algoritmo "equacaoSegundoGrau"
+
+Var
+a, b, c: inteiro
+delta: real
+
+Inicio
+      Escreval("Escreva o valor de A:")
+      Leia(a)
+      Escreval("Escreva o valor de B:")
+      Leia(b)
+      Escreval("Escreva o valor de C:")
+      Leia(c)
+      delta <- (b^2) - (4 * a * c)
+      Escreval("O valor de delta será: ", delta)
+      
+Fimalgoritmo
