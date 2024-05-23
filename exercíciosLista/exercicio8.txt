@@ -1,0 +1,22 @@
+Algoritmo "medidas"
+
+Var
+metros, km, hm, dam, dm, cm, mm: real
+
+Inicio
+      Escreval("Digite, em metros, a distância que deseja converter para outras medidas:")
+      Leia(metros)
+      km <- metros / 1000
+      hm <- metros / 100
+      dam <- metros / 10
+      dm <- metros * 10
+      cm <- metros * 100
+      mm <- metros * 1000
+      
+      Escreval("km: ", km)
+      Escreval("hm: ", hm)
+      Escreval("dam: ", dam)
+      Escreval("dm: ", dm)
+      Escreval("cm: ", cm)
+      Escreval("mm: ", mm)
+Fimalgoritmo
