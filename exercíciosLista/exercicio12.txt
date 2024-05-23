@@ -1,0 +1,12 @@
+Algoritmo "precoProduto"
+
+Var
+preco, valorFinal, desconto: real
+Inicio
+      Escreval("Qual o valor do produto?")
+      Leia(preco)
+      Escreval("Qual a porcentagem de desconto?")
+      Leia(desconto)
+      valorFinal <- preco - ((desconto * preco) / 100)
+      Escreval("O valor final do produto será: ", valorFinal, " reais")
+Fimalgoritmo
