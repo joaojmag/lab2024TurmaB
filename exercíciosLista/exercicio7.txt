@@ -1,0 +1,14 @@
+Algoritmo "dobro"
+
+Var
+numero, dobro, tercaP: real
+
+Inicio
+      Escreval("Digite o número que deseja saber o dobro e a terça parte: ")
+      Leia(numero)
+      dobro <- numero * 2
+      tercaP <- numero / 3
+      Escreval("O dobro de ", numero, " é ", dobro)
+      Escreval("A terça parte de ", numero, " é ", tercaP)
+
+Fimalgoritmo
