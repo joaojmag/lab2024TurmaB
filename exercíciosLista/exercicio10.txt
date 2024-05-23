@@ -1,0 +1,14 @@
+Algoritmo "dinheiroCarteira"
+
+Var
+largura, altura, litro, total: real
+
+Inicio
+      Escreval("Digite a altura da parede")
+      Leia(altura)
+      Escreval("Digite a largura da parede")
+      Leia(largura)
+      total <- altura * largura
+      litro <- total / 2
+      Escreval("Deverão ser utilizados para realizar o serviço ", litro, " litros de tinta")
+Fimalgoritmo
