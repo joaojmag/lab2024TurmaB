@@ -1,0 +1,12 @@
+algoritmo "AntecessorESucessor"
+var
+   N, ANT, SUC: inteiro
+inicio
+      escreval (" Vou mostrar o antecessor e sucessor de um numero ")
+      escreva (" DIgite um número: ")
+      leia (N)
+      ANT <- N - 1
+      SUC <- N + 1
+      escreval (" Antecessor de", N, " é: ", ANT)
+      escreval (" Sucessor de", N, " é: ", SUC)
+fimalgoritmo
