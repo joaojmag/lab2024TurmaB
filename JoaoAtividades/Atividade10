@@ -1,0 +1,13 @@
+algoritmo "PintarAParede"
+var
+   C, L, CL, T: real
+inicio
+      escreval (" Quanto de tinta vou usar para pintar uma parede?")
+      escreval (" Quantos m² de comprimento tem a parede? ")
+      leia (C)
+      escreval (" E quantos m² de largura tem a sua parede? ")
+      leia (L)
+      CL <- C * L
+      T <- CL / 2
+      escreval (" Considerando que voce use 1 litro de tinta a cada 2m, voce usara ", T, " litros de tinta " )
+fimalgoritmo
