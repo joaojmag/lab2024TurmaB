@@ -1,0 +1,20 @@
+algoritmo "Conversor de medidas"
+var
+   Metros, km, hm, dam, dm, cm, mm: real
+inicio
+      escreval (" Vamos converter metros em outras medidas ")
+      escreval (" Escolha uma distancia em metros ")
+      leia (Metros)
+      km <- Metros / 1000
+      hm <- Metros / 100
+      dam <- Metros / 10
+      dm <- Metros * 10
+      cm <- Metros * 100
+      mm <- Metros * 1000
+      escreval (Metros, " metros são o mesmo que ", km, "km")
+      escreval (Metros, " metros são o mesmo que ", hm, "hm")
+      escreval (Metros, " metros são o mesmo que ", dam, "dam")
+      escreval (Metros, " metros são o mesmo que ", dm, "dm")
+      escreval (Metros, " metros são o mesmo que ", cm, "cm")
+      escreval (Metros, " metros são o mesmo que ", mm, "mm")
+fimalgoritmo
