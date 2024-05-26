@@ -1,0 +1,14 @@
+Algoritmo "Media"
+
+Var
+   P1, P2, M: real
+
+Inicio
+      escreval (" Ola, esta querendo saber a sua media?")
+      escreval ("Qual foi a sua primeira pontuação? ")
+      leia (P1)
+      escreval ("E qual foi a segunda pontuação? ")
+      leia (P2)
+      M <- (P1 + P2) / 2
+      escreval (" A media da sua pontuação é de: ", M)
+Fimalgoritmo
