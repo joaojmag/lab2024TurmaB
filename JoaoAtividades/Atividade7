@@ -1,0 +1,12 @@
+algoritmo "DobroEInteiro"
+var
+   N, D, T: real
+inicio
+      escreval (" Vou te mostrar o dobro de um número, e a terça parte dele")
+      escreval (" Escolha um número" )
+      leia (N)
+      D <- N * 2
+      T <- N / 3
+      escreval (" O dobro de", N, " é: ", D)
+      escreva (" A terça parte de", N, " é: ", T:5:2)
+fimalgoritmo
