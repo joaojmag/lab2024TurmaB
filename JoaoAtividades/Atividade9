@@ -1,0 +1,11 @@
+algoritmo "Conversor de moeda"
+var
+   R, D: real
+inicio
+      escreval (" Vamos converter seu real em dolar")
+      escreval ("Qual valor você deseja converter? ")
+      leia (R)
+      D <- R / 3.45
+      escreval ("R$", R:5:2, " tem o mesmo valor que aproximadamente: US$", D:5:2)
+      
+fimalgoritmo
