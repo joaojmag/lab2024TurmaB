@@ -1,0 +1,11 @@
+Algoritmo "conte10"
+
+Var
+   mao: inteiro
+Inicio
+   mao <- 10
+   Enquanto (mao >= 0) faca
+   Escreval(mao)
+   mao <- mao - 1
+   FimEnquanto
+Fimalgoritmo
