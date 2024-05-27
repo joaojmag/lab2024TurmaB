@@ -11,7 +11,7 @@ inicio
 
 
 
-Escreval("Bem vindo a UNICAR!Nos informe seu nome e cpf!")
+Escreval("Bem vindo a UNICAR!Informe seu nome!")
  Leia(Nome)
   Escreval("Eae ", Nome,", quanto tempo!, agora seu CPF: ")
   Leia(CPF)
