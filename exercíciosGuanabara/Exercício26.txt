@@ -1,4 +1,4 @@
-Algoritmo "aproveitamentoAluno"
+Algoritmo "jogoFutebol"
 
 Var
    bangu, madureira, diferenca: inteiro
