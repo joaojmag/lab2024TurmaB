@@ -1,0 +1,19 @@
+Algoritmo "conversao4"
+
+Var
+  dolar, reais, total: real
+  contador, conversao: inteiro
+Inicio
+   Escreval("Quantas conversões serão realizadas?")
+   Leia(conversao)
+   contador <- 1
+   Enquanto (contador <= conversao)faca
+   Escreval("Qual o valor em real?")
+   Leia(reais)
+   dolar <- reais / 2.20
+   Escreval("O valor em dólares é: ", dolar, "dólares")
+   total <- total + dolar
+   contador <- contador + 1
+   FimEnquanto
+   Escreval("O valor total das ", conversao," conversões é ", total)
+Fimalgoritmo
