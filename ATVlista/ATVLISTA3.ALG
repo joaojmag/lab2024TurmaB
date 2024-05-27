@@ -1,9 +1,5 @@
 Algoritmo "atvlista3"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual
+
 Var
 nome: caractere
 salario: caractere
