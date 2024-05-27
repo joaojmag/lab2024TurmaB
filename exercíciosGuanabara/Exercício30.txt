@@ -1,0 +1,16 @@
+Algoritmo "conteUsuario"
+
+Var
+    valor, mao, pular: inteiro
+Inicio
+      Escreval("Quer contar até quanto?")
+      Leia(valor)
+      Escreval("Quer pular de quanto em quanto?")
+      Leia(pular)
+      mao <- 0
+      Enquanto (mao <= valor) faca
+      Escreval(mao)
+      mao <- mao + pular
+      FimEnquanto
+      
+Fimalgoritmo
