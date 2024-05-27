@@ -1,0 +1,18 @@
+Algoritmo "conteMaiorDigitado"
+
+Var
+   numero, numeroUsuario, numeroTentativas, maior: inteiro
+Inicio
+   numeroTentativas <- 1
+   Enquanto (numeroTentativas <= 4) faca
+      numeroTentativas <- numeroTentativas + 1
+      Escreval("Escreva um número")
+      Leia(numeroUsuario)
+      Se (numeroUsuario > maior) entao
+         maior <- numeroUsuario
+      FimSe
+         numero <- numero + numeroUsuario
+   FimEnquanto
+   Escreval("A soma total dos valores é: ", numero)
+   Escreval("O maior número digitado foi: ", maior)
+Fimalgoritmo
