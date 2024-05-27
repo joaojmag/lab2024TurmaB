@@ -1,0 +1,15 @@
+Algoritmo "conteSome"
+
+Var
+   numero, numeroUsuario, numeroTentativas: inteiro
+Inicio
+   numeroTentativas <- 1
+   Enquanto (numeroTentativas <= 10) faca
+      numeroTentativas <- numeroTentativas + 1
+      Escreval("Escreva um número")
+      Leia(numeroUsuario)
+      numero <- numero + numeroUsuario
+   FimEnquanto
+   Escreval("A soma total dos valores é: ", numero)
+
+Fimalgoritmo
