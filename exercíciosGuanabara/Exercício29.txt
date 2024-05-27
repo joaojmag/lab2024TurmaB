@@ -1,0 +1,14 @@
+Algoritmo "conteUsuário"
+
+Var
+    valor, mao: inteiro
+Inicio
+      Escreval("Quer contar até quanto?")
+      Leia(valor)
+      mao <- 0
+      Enquanto (mao <= valor) faca
+      Escreval(mao)
+      mao <- mao + 1
+      FimEnquanto
+      
+Fimalgoritmo
