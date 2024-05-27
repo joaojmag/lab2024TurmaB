@@ -1,7 +1,9 @@
 Algoritmo "atvlista16"
 
+
+
 Var
- cigarros , dias ,dia ,reducao, anos, perda: real
+ cigarros , dias ,reducao, anos, perda, horas,min,horasd, seg:real
 
 
 Inicio
@@ -13,9 +15,31 @@ Inicio
  cigarros <- dias*cigarros
  reducao <- cigarros*10
  perda <- reducao/1440
+ horas <- perda*24
+
+ horasd <-( perda - int( perda) ) * 24
+ min <-( horasd - int( horasd )  ) * 60
+ seg <-(min - int(min) ) * 60
+
+
  
- escreva ("tempo de vida perdido:",perda, "dias")
  
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+ escreva ("tempo de vida perdido:",int( perda), "dias",int( horasd) ,"horas",int ( min) ,"minutos",int(seg), "segundos")
+
 
 
 Fimalgoritmo
