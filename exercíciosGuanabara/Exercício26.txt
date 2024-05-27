@@ -1,0 +1,28 @@
+Algoritmo "aproveitamentoAluno"
+
+Var
+   bangu, madureira, diferenca: inteiro
+   status: caractere
+
+Inicio
+   Escreval("Quantos gols do bangu?")
+   Leia(bangu)
+   Escreval("Quantos gols do madureira?")
+   Leia(madureira)
+   Se (bangu > madureira) entao
+      diferenca <- bangu - madureira
+   Senao
+      diferenca <- madureira - bangu
+   FimSe
+   Escreval("Diferença: ",diferenca)
+   Escolha diferenca
+   Caso 0
+      status <- "EMPATE"
+   Caso 1, 2, 3
+      status <- "PARTIDA NORMAL"
+   OutroCaso
+      status <- "GOLEADA"
+   FimEscolha
+   Escreval("Status: ", status)
+
+Fimalgoritmo
