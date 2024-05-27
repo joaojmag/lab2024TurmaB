@@ -1,6 +1,6 @@
 algoritmo "Cigarros"
 var
-   numero, tmp, Ncigarro, tempoEmMinutos,tempoEmdias: real
+   numero, tmp, Ncigarro, tempoEmMinutos,tempoEmdias, dias, horasTotais, horas, horasCertas, minutos, minutosCertos: real
 inicio
       escreval ("Todos saabemos que o cigarro é extremamente prejudicial a saúde, e a cada cigarro que voce fuma, voce perde 10 minutos de vida.")
       escreval ("Com certas informações podemos calcular quanto tempo você ja perdeu de vida. Para isso é necessario sabermos: ")
@@ -12,10 +12,11 @@ inicio
       escreval (Ncigarro, " e o numero de cigarros fumados em ", tmp, " anos!!!")
       tempoEmMinutos <- Ncigarro * 10
       tempoEmdias <- tempoEmMinutos / (24 * 60)
-      escreva ("Considerando que voce perca 10 minutos de vida a cada cigarro, voce ja perdeu cerca de ", tempoEmDias:5:2, " dias de vida" )
-      
+      dias <- int (tempoEmdias)
+      horas <- tempoEmdias - dias
+      horasCertas <- horas * 24
+      minutos <- (horasCertas - int (horasCertas)) * 60
+      escreval ("Considerando que voce perca 10 minutos de vida a cada cigarro, voce ja perdeu cerca de ", dias, " dias e, ", int (horasCertas), " horas e ", int (minutos), " minutos")
 
-      
-      
 
 fimalgoritmo
