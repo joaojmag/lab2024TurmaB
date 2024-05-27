@@ -1,0 +1,35 @@
+Algoritmo "aproveitamentoAluno"
+
+Var
+   nota1, nota2, media: real
+
+Inicio
+   Escreval("Qual sua primeira nota?")
+   Leia(nota1)
+   Escreval("Qual sua segunda nota?")
+   Leia(nota2)
+   media <- (nota1 + nota2) / 2
+   Escreval("Média: ", media)
+   Se (media >= 9) entao
+      Escreval("Aproveitamento: A")
+   Senao
+        Se (media < 9) e (media >= 8) entao
+           Escreval("Aproveitamento: B")
+        Senao
+             Se (media < 8) e (media >= 7) entao
+                Escreval("Aproveitamento: C")
+             Senao
+                  Se (media < 7) e (media >= 6) entao
+                     Escreval("Aproveitamento: D")
+                  Senao
+                       Se (media < 6) e (media >= 5) entao
+                          Escreval("Aproveitamento: E")
+                       Senao
+                            Escreval("Aproveitamento: F")
+                       FimSe
+                  FimSe
+             FimSe
+        FimSe
+   FimSe
+
+Fimalgoritmo
