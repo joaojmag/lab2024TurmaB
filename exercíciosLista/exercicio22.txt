@@ -1,0 +1,20 @@
+Algoritmo "anoAlistamento"
+
+Var
+   anoNascimento, faltam, foram, anoAtual, idade: inteiro
+
+Inicio
+   Escreval("Qual ano estamos?")
+   Leia(anoAtual)
+   Escreval("Qual seu ano de nascimento?")
+   Leia(anoNascimento)
+   idade <- anoAtual - anoNascimento
+   Se (idade >= 18) entao
+      foram <- idade - 18
+      Escreval("Você já pode se alistar e/ou já se alistou fazem ", foram, " anos")
+   Senao
+      faltam <- 18 - idade
+      Escreval("Você ainda não pode se alistar, faltam ", faltam, " anos para poder")
+   FimSe
+
+Fimalgoritmo
