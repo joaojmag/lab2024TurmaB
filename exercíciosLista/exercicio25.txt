@@ -1,0 +1,18 @@
+Algoritmo "triangulo"
+
+Var
+   ladoA, ladoB, ladoC: real
+
+Inicio
+   Escreval("Escreva o tamanho da primeira reta (em cm):")
+   Leia(ladoA)
+   Escreval("Escreva o tamanho da segunda reta (em cm):")
+   Leia(ladoB)
+   Escreval("Escreva o tamanho da terceira reta (em cm):")
+   Leia(ladoC)
+   Se (ladoA + ladoB > ladoC) e (ladoB + ladoC > ladoA) e (ladoA + ladoC > ladoB) entao
+      Escreval("É possível formar um triângulo com essas medidas!")
+   Senao
+      Escreval("Não é possível formar um triângulo com essas medidas!")
+   FimSe
+Fimalgoritmo
