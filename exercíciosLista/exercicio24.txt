@@ -1,0 +1,19 @@
+Algoritmo "valorPassagem"
+
+Var
+   distancia, valorPassagem: real
+
+Inicio
+   Escreval("Qual distância deseja percorrer (em km)?")
+   Leia(distancia)
+   Se (distancia <= 200) entao
+      valorPassagem <- distancia * 0.5
+      Escreval("Distância: ", distancia, " km")
+      Escreval("Valor da passagem: ", valorPassagem, " reais")
+   Senao
+      valorPassagem <- distancia * 0.45
+      Escreval("Distância: ", distancia, " km")
+      Escreval("Valor da passagem: ", valorPassagem, " reais")
+   FimSe
+
+Fimalgoritmo
