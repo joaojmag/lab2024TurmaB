@@ -1,0 +1,26 @@
+Algoritmo "mediaAproveitamento"
+
+Var
+   nota1, nota2, media: real
+   aproveitamento, nome: caracter
+
+Inicio
+   Escreval("Qual seu nome?")
+   Leia(nome)
+   Escreval("Qual a primeira nota?")
+   Leia(nota1)
+   Escreval("Qual a segunda nota?")
+   Leia(nota2)
+   media <- (nota1 + nota2) / 2
+   Se (media > 7) entao
+      aproveitamento <- "bom"
+      Escreval("Nome: ", nome)
+      Escreval("Média: ", media)
+      Escreval("Aproveitamento: ", aproveitamento)
+   Senao
+      aproveitamento <- "ruim"
+      Escreval("Nome: ", nome)
+      Escreval("Média: ", media)
+      Escreval("Aproveitamento: ", aproveitamento)
+   FimSe
+Fimalgoritmo
