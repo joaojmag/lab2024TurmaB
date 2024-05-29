@@ -1,0 +1,31 @@
+Algoritmo "aproveitamentoNota"
+
+Var
+   alunosN, quantos, total: inteiro
+   nome, melhor: caractere
+   nota, maior: real
+Inicio
+   Escreval("Escola X")
+   Escreval("Quantos alunos estudam na escola X?")
+   Leia(alunosN)
+   total <- alunosN
+   quantos <- 1
+   Enquanto (alunosN > 0)faca
+      Escreval("Qual o nome do aluno", quantos, "?")
+      Leia(nome)
+      Escreval("Qual a nota de ", nome, "?")
+      Leia(nota)
+      Escreval("Aluno ", quantos)
+      Escreval("Nome: ", nome)
+      Escreval("Nota: ", nota)
+      alunosN <- alunosN - 1
+      quantos <- total + 1 - alunosN
+      Se (nota > maior) entao
+         maior <- nota
+         melhor <- nome
+      FimSe
+   FimEnquanto
+   Escreval("O melhor aproveitamento foi ", maior, " do aluno (a) ", melhor)
+
+
+Fimalgoritmo
