@@ -1,0 +1,19 @@
+Algoritmo "idadeVotar"
+
+Var
+   anoNascimento, anoAtual, idade, anoPode: inteiro
+
+Inicio
+   Escreval("Em qual ano estamos?")
+   Leia(anoAtual)
+   Escreval("Qual seu ano de nascimento?")
+   Leia(anoNascimento)
+   idade <- anoAtual - anoNascimento
+   anoPode <- 16 - idade
+   Se (idade >= 16) entao
+      Escreval("Você poderá votar esse ano!")
+   Senao
+      Escreval("Você não pode votar esse ano, mas daqui ", anoPode, " anos, poderá!")
+   FimSe
+
+Fimalgoritmo
