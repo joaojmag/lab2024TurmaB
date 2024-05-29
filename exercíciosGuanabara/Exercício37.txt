@@ -1,0 +1,14 @@
+Algoritmo "repita"
+
+Var
+   contador, numero, result: inteiro
+Inicio
+   contador <- 1
+   numero <- 8
+   Repita
+      result <- numero * contador
+      Escreval(numero, "X", contador, "=", result)
+      contador <- contador + 1
+   Ate (contador > 10)
+
+Fimalgoritmo
