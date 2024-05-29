@@ -1,0 +1,34 @@
+Algoritmo "descontoDiaMulher"
+
+Var
+   nome: caractere
+   valorCompra, desconto, valorFinal: real
+   sexo: inteiro
+
+
+Inicio
+
+   Escreval("Qual seu nome?")
+   Leia(nome)
+   Escreval("Qual o valor de sua compra, sem o desconto?")
+   Leia(valorCompra)
+   Escreval("Qual seu sexo?")
+   Escreval("Digite 1 para feminino")
+   Escreval("Digite 2 para masculino")
+   Leia(sexo)
+   Se (sexo = 1) entao
+      desconto <- (valorCompra * 13) / 100
+      valorFinal <- valorCompra - desconto
+      Escreval("Nome: ", nome)
+      Escreval("Valor da compra sem desconto: ", valorCompra, " reais")
+      Escreval("Valor do desconto: ", desconto, " reais")
+      Escreval("Valor final da compra: ", valorFinal, " reais")
+   Senao
+      desconto <- (valorCompra * 5) / 100
+      valorFinal <- valorCompra - desconto
+      Escreval("Nome: ", nome)
+      Escreval("Valor da compra sem desconto: ", valorCompra, " reais")
+      Escreval("Valor do desconto: ", desconto, " reais")
+      Escreval("Valor final da compra: ", valorFinal, " reais")
+   FimSe
+Fimalgoritmo
