@@ -1,0 +1,17 @@
+Algoritmo "contagemNegativos"
+
+Var
+   contador, totalNegativos, numero: inteiro
+Inicio
+   contador <- 1
+   totalNegativos <- 0
+   Repita
+      Escreval("Digite um número:")
+      Leia(numero)
+      contador <- contador + 1
+      Se(numero < 0)entao
+         totalNegativos <- totalNegativos + 1
+      FimSe
+   Ate(contador > 7)
+   Escreval("Número total de negativos digitados: ", totalNegativos)
+Fimalgoritmo
