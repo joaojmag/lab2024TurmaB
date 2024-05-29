@@ -1,0 +1,20 @@
+Algoritmo "anoBissexto"
+
+Var
+   ano: inteiro
+   bissexto: caractere
+
+Inicio
+   Escreval("Qual ano deseja saber se é bissexto?")
+   Leia(ano)
+   Se(ano % 4 = 0) entao
+      bissexto <- "sim"
+      Escreval("Ano: ", ano)
+      Escreval("Bissexto: ", bissexto)
+   Senao
+      bissexto <- "não"
+      Escreval("Ano: ", ano)
+      Escreval("Bissexto: ", bissexto)
+   FimSe
+
+Fimalgoritmo
