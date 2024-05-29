@@ -1,0 +1,18 @@
+Algoritmo "velocidadeCarro"
+
+Var
+   velocidade, multa: real
+
+
+Inicio
+   Escreval("Qual a velocidade do carro?")
+   Leia(velocidade)
+   Se (velocidade > 80) entao
+      Escreval("Você foi multado!")
+      multa <- (velocidade - 80) * 5
+      Escreval("Valor da multa: ", multa, " reais")
+   Senao
+      Escreval("Você não foi multado!")
+   FimSe
+
+Fimalgoritmo
