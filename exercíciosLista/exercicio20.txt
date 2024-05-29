@@ -1,0 +1,15 @@
+Algoritmo "parImpar"
+
+Var
+   numero: inteiro
+
+Inicio
+   Escreval("Escreva o número que deseja saber se é par ou ímpar: ")
+   Leia(numero)
+   Se (numero % 2 = 0) entao
+      Escreval("O número ", numero, " é par")
+   Senao
+      Escreval("O número ", numero, " é ímpar")
+   FimSe
+
+Fimalgoritmo
