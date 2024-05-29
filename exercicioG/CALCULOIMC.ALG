@@ -26,14 +26,34 @@ Inicio
             escreval("voce esta abaixo do peso ideal")
       
 
-        senao
-                 se (imc >=25) entao
+         senao
+             se (imc >=25) e (imc < 29.9) entao
                     escreval("voce esta acima do peso ideal")
 
+                senao
+                     se (imc >=30) e (imc < 34.9) entao
+                        escreval("voce tem obesidade grau I")
+                        
+                      senao
+                          se (imc >=35) e (imc < 40)  entao
+                             escreval("vc tem obesidade grau II")
+                             
+                           senao
+                                se (imc >=40) entao
+                                   escreval("obesidade grau III")
 
+                                senao
+                                     se (imc < 16.9)  entao
+                                         escreval("vc esta muito abaixo do peso ")
 
-                    fimse
+                                      fimse
+
+                                fimse
+                                
+                          fimse
+                     fimse
              fimse
+        fimse
    fimse
 
 Fimalgoritmo
