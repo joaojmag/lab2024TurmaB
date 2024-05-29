@@ -16,10 +16,14 @@ inicio
       escolha sexo
               caso 1
                    D <- valor - (valor * 5 / 100)
+                   escreval ("O valor da sua compra com desconto é de: R$", D:5:2)
               caso 2
-                   D <- valor - (valor * 13 / 100)
+                  D <- valor - (valor * 13 / 100)
+                   escreval ("O valor da sua compra com desconto é de: R$", D:5:2)
+              outrocaso
+                       escreval ("Voce precisar escolher uma das duas outras opções")
       fimescolha
-      escreval ("O valor da sua compra com desconto é de: R$", D:5:2)
+
 
 
       
