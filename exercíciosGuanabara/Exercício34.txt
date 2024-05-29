@@ -1,0 +1,22 @@
+Algoritmo "contagemInteligente"
+
+Var
+   inicial, final: inteiro
+Inicio
+   Escreval("Escreva o primeiro número")
+   Leia(inicial)
+   Escreval("Escreva o segundo número")
+   Leia(final)
+   Se (inicial > final) entao
+      Enquanto (inicial >= final) faca
+      Escreval(inicial)
+         inicial <- inicial - 1
+      FimEnquanto
+   Senao
+      Enquanto (inicial <= final) faca
+      Escreval(inicial)
+         inicial <- inicial + 1
+      FimEnquanto
+   FimSe
+
+Fimalgoritmo
