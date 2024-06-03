@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+km, distancia1,distancia2: real
+inicio
+escreval("Quantos km você percorreu?")
+leia(km)
+distancia1 <- km * 0.50
+distancia2 <- km * 0.45
+se(km <= 200)entao
+escreval("Você terá que pagar R$",distancia1," da sua passagem")
+senao(km >200)
+escreval("Você tera que pagar R$",distancia2," da sua passagem")
+fimse
+fimalgoritmo
