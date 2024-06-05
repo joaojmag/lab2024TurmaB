@@ -1,0 +1,41 @@
+Algoritmo "salarioReajuste"
+
+Var
+   salarioAtual, novoSalario: real
+   anos: inteiro
+   genero: caractere
+
+Inicio
+   Escreval("Qual seu salário atual (em real)")
+   Leia(salarioAtual)
+   Escreval("Quantos anos possui de empresa?")
+   Leia(anos)
+   Escreval("Qual seu gênero (masculino ou feminino)?")
+   Leia(genero)
+   Se(genero = "feminino")entao
+      Se(anos < 15) entao
+         novoSalario <- salarioAtual + (salarioAtual * 5 / 100)
+      Senao
+         Se(anos >= 15) e (anos < 20) entao
+            novoSalario <- salarioAtual + (salarioAtual * 12 / 100)
+         Senao
+            novoSalario <- salarioAtual + (salarioAtual * 23 / 100)
+         FimSe
+      FimSe
+      Escreval("Seu novo salário será de ", novoSalario, " reais")
+   Senao
+      Se(genero = "masculino")entao
+         Se(anos < 20) entao
+            novoSalario <- salarioAtual + (salarioAtual * 3 / 100)
+         Senao
+            Se(anos >= 20) e (anos < 30) entao
+               novoSalario <- salarioAtual + (salarioAtual * 13 / 100)
+            Senao
+               novoSalario <- salarioAtual + (salarioAtual * 30 / 100)
+            FimSe
+         FimSe
+         Escreval("Seu novo salário será de ", novoSalario, " reais")
+      FimSe
+   FimSe
+
+Fimalgoritmo
