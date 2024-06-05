@@ -1,0 +1,28 @@
+Algoritmo "vidaSaudavel"
+
+Var
+   horas, pontos: inteiro
+   valorRecebido: real
+
+Inicio
+   Escreval("Quantas horas de atividade você praticou no mês?")
+   Leia(horas)
+   Se(horas < 10) entao
+      pontos <- horas * 2
+      valorRecebido <- pontos * 0.05
+      Escreval("Pontos: ", pontos)
+      Escreval("Valor recebido: ", valorRecebido, " reais")
+   Senao
+      Se(horas >= 10) e (horas < 20)entao
+         pontos <- horas * 5
+         valorRecebido <- pontos * 0.05
+         Escreval("Pontos: ", pontos)
+         Escreval("Valor recebido: ", valorRecebido, " reais")
+      Senao
+         pontos <- horas * 10
+         valorRecebido <- pontos * 0.05
+         Escreval("Pontos: ", pontos)
+         Escreval("Valor recebido: ", valorRecebido, " reais")
+      FimSe
+   FimSe
+Fimalgoritmo
