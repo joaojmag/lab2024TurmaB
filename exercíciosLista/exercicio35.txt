@@ -1,0 +1,36 @@
+Algoritmo "aluguelCarro"
+
+Var
+   carro: caractere
+   dias, valorDias: inteiro
+   km, valorTotal, valorKm: real
+
+Inicio
+   Escreval("Qual carro você alugou (popular ou luxo)?")
+   Leia(carro)
+   Escreval("Por quantos dias você alugou?")
+   Leia(dias)
+   Escreval("Quantos km rodados?")
+   Leia(km)
+   Se(carro = "popular")entao
+      Se(km <= 100)entao
+         valorKm <- km * 0.20
+      Senao
+         valorKm <- km * 0.10
+      FimSe
+      valorTotal <- (dias * 90) + valorKm
+      Escreval("O valor total será R$", valorTotal, "reais")
+   Senao
+      Se(carro = "luxo")entao
+         Se(km <= 200)entao
+            valorKm <- km * 0.30
+         Senao
+            valorKm <- km * 0.25
+         FimSe
+         valorTotal <- (dias * 150) + valorKm
+         Escreval("O valor total será ", valorTotal, " reais")
+      Senao
+      FimSe
+   FimSe
+
+Fimalgoritmo
