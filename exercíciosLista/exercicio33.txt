@@ -1,0 +1,21 @@
+Algoritmo "emprestimoCasa"
+
+Var
+   valorC, salario, valorParcela, trintaSalario: real
+   anos, nParcelas: inteiro
+Inicio
+   Escreval("Qual o valor da casa que deseja comprar?")
+   Leia(valorC)
+   Escreval("Qual o valor de seu salário?")
+   Leia(salario)
+   Escreval("Em quantos anos deseja pagar a casa?")
+   Leia(anos)
+   nParcelas <- anos * 12
+   valorParcela <- valorC / nParcelas
+   trintaSalario <- salario * 30 /100
+   Se(valorParcela > trintaSalario) entao
+      Escreval("Empréstimo negado, renda insuficiente")
+   Senao
+      Escreval("Empréstimo aprovado, em ", nParcelas, " parcelas, no valor de R$", valorParcela:10:2, " cada")
+   FimSe
+Fimalgoritmo
