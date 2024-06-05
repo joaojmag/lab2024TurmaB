@@ -1,0 +1,37 @@
+Algoritmo "salarioReajuste"
+
+Var
+   salarioAtual, salarioNovo, ajuste: real
+   nome: caractere
+   anos: inteiro
+
+Inicio
+   Escreval("Escreva seu nome")
+   Leia(nome)
+   Escreval("Escreva seu salário atual")
+   Leia(salarioAtual)
+   Escreval("Está a quantos anos na empresa?")
+   Leia(anos)
+   Se(anos < 3) entao
+      ajuste <- salarioAtual * 3 / 100
+      salarioNovo <- salarioAtual + ajuste
+      Escreval("Nome: ", nome)
+      Escreval("Salário Atual: R$", salarioAtual)
+      Escreval("Novo salário: R$", salarioNovo)
+   Senao
+      Se(anos >= 3) e (anos < 10) entao
+         ajuste <- salarioAtual * 12.5 / 100
+         salarioNovo <- salarioAtual + ajuste
+         Escreval("Nome: ", nome)
+         Escreval("Salário Atual: R$", salarioAtual)
+         Escreval("Novo salário: R$", salarioNovo)
+      Senao
+         ajuste <- salarioAtual * 20 / 100
+         salarioNovo <- salarioAtual + ajuste
+         Escreval("Nome: ", nome)
+         Escreval("Salário Atual: R$", salarioAtual)
+         Escreval("Novo salário: R$", salarioNovo)
+      FimSe
+   FimSe
+
+Fimalgoritmo
