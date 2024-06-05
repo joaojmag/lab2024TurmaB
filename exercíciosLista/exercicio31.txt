@@ -1,0 +1,39 @@
+Algoritmo "jokenpo"
+
+Var
+   jogada1, jogada2: caractere
+Inicio
+   Escreval("Escolha pedra, papel ou tesoura")
+   Leia(jogada1)
+   Escreval("Escolha pedra, papel ou tesoura")
+   Leia(jogada2)
+   Se (jogada1 = "pedra") e (jogada2 = "papel") entao
+      Escreval("O jogador 2 venceu")
+   Senao
+      Se(jogada1 = "pedra") e (jogada2 = "tesoura") entao
+         Escreval("O jogador 1 venceu")
+      Senao
+         Se(jogada1 = "papel") e (jogada2 = "pedra") entao
+            Escreval("O jogador 1 venceu")
+         Senao
+            Se(jogada1 = "papel") e (jogada2 = "tesoura") entao
+               Escreval("O jogador 2 venceu")
+            Senao
+               Se(jogada1 = "tesoura") e (jogada2 = "pedra") entao
+                  Escreval("O jogador 2 venceu")
+               Senao
+                  Se(jogada1 = "tesoura") e (jogada2 = "papel") entao
+                     Escreval("O jogador 1 venceu")
+                  Senao
+                     Se(jogada1 = jogada2) entao
+                        Escreval("Empate")
+                     Senao
+                        Escreval("Escolha inválida")
+                     FimSe
+                  FimSe
+               FimSe
+            FimSe
+         FimSe
+      FimSe
+   FimSe
+Fimalgoritmo
