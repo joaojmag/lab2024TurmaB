@@ -2,17 +2,13 @@ algoritmo "semnome"
 var
 lado1,lado2,lado3: inteiro
 inicio
-
 escreval("Escreva o primeiro lado")
 leia(lado1)
-
 escreval("Escreva o segundo lado")
 leia(lado2)
-
 escreval("Escreva o terceiro lado")
 leia (lado3)
-
-se(lado1 + lado2 <lado3)entao
+se(lado1 + lado2 >lado3)entao
 escreval("é possível fazer um triângulo")
 senao()
 escreva("não é possível")
