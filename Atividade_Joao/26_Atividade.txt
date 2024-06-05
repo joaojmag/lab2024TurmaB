@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+num1,num2: real
+inicio
+escreval("Escreva um número")
+leia(num1)
+escreval("Escreva o segundo número")
+leia(num2)
+se (num1 > num2)entao
+   escreval("O primeiro número é o maior")
+senao
+se(num2 > num1)entao
+   escreval("O segundo número é o maior")
+senao
+se (num1 = num2)entao
+   escreval("Os dois números são iguais")
+senao
+fimse
+fimse
+     fimse
+fimalgoritmo
