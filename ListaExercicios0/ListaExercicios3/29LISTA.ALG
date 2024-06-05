@@ -6,9 +6,9 @@ anos:real
 inicio
 Escreval("Qual seu nome ?: ")
 Leia(Nome)
-Escreval("Salario? : ")
+Escreval("Quanto voce ganha de salario? : ")
 Leia(Salario)
-Escreval("Quanto tempo voce trabalha nessa empresa ", Nome,"?")
+Escreval("Quantos anos voce trabalha nessa empresa ", Nome,"?")
 Leia(anos)
 se(anos<=3) entao
 Escreval(" Voce recebeu um aumento!! ", salario+(salario*3/100))
