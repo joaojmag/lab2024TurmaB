@@ -35,6 +35,8 @@ Inicio
             FimSe
          FimSe
          Escreval("Seu novo salário será de ", novoSalario, " reais")
+      Senao
+           Escreval("Opção inválida")
       FimSe
    FimSe
 
