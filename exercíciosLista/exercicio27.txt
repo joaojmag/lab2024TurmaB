@@ -1,0 +1,22 @@
+Algoritmo "lerDuasNotas"
+
+Var
+   nota1, nota2, media: real
+
+Inicio
+   Escreval("Escreva a primeira nota")
+   Leia(nota1)
+   Escreval("Escreva a segunda nota")
+   Leia(nota2)
+   media <- (nota1 + nota2)/2
+   Se(media >= 7) entao
+      Escreval("Aprovado")
+   Senao
+      Se(media >= 5) e (media <= 6.9) entao
+         Escreval("Recuperação")
+      Senao
+         Escreval("Reprovado")
+      FimSe
+   FimSe
+
+Fimalgoritmo
