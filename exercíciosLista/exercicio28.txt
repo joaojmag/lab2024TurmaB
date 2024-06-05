@@ -1,0 +1,25 @@
+Algoritmo "terreno"
+
+Var
+   comprimento, largura, total: real
+
+Inicio
+   Escreval("Escreva a largura do terreno")
+   Leia(largura)
+   Escreval("Escreva o comprimento do terreno")
+   Leia(comprimento)
+   total <- largura * comprimento
+   Se(total < 100) entao
+      Escreval("Área: ", total, "m²")
+      Escreval("Terreno popular")
+   Senao
+      Se(total >= 100) e (total <= 500) entao
+         Escreval("Área: ", total, "m²")
+         Escreval("Terreno master")
+      Senao
+         Escreval("Área: ", total, "m²")
+         Escreval("Terreno VIP")
+      FimSe
+   FimSe
+
+Fimalgoritmo
