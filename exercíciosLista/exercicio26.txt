@@ -1,0 +1,21 @@
+Algoritmo "lerDoisNumeros"
+
+Var
+   numero1, numero2: real
+
+Inicio
+   Escreval("Escreva o primeiro número")
+   Leia(numero1)
+   Escreval("Escreva o segundo número")
+   Leia(numero2)
+   Se(numero1 > numero2) entao
+      Escreval("O primeiro valor é o maior")
+   Senao
+      Se(numero2 > numero1) entao
+         Escreval("O segundo valor é o maior")
+      Senao
+         Escreval("Os valores são iguais")
+      FimSe
+   FimSe
+
+Fimalgoritmo
