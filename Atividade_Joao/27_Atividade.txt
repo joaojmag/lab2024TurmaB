@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+nota1,nota2,media: real
+inicio
+escreval("Digite sua primeira nota")
+leia(nota1)
+
+escreval("Digite sua segunda nota")
+leia(nota2)
+
+media <- (nota1 + nota2) / 2
+
+se (media <= 4.9)entao
+escreval("Media de 4.9: REPROVADO"," | Sua média:",media)
+senao
+se(media >=5) e (media <= 6.9)entao
+escreval("Media de 5 até 6.9: RECUPERAÇÃO"," | Sua média:",media)
+senao
+se(media >=7)entao
+escreval("Media maior que 7: APROVADO"," | Sua média:",media)
+senao
+fimse
+fimse
+     Fimse
+fimalgoritmo
