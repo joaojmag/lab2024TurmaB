@@ -5,7 +5,10 @@ Var
 Inicio
    Escreval("Digite um valor")
    Leia(valor)
+   Se(valor % 2 = 1) entao
+      valor <- valor - 1
+   FimSe
    Para cont <- valor ate 0 passo -2 faca
-         Escreval(cont)
+      Escreval(cont)
    FimPara
 Fimalgoritmo
