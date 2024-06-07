@@ -1,0 +1,23 @@
+Algoritmo "numeroPrimo"
+Var
+
+   numero, cont, contaD: inteiro
+Inicio
+   cont <- 1
+   contaD <- 0
+   Escreva("Digite um número: ")
+   Leia(numero)
+   Repita
+      Escreval(cont)
+      Se(numero % cont = 0) entao
+         contaD <- contaD + 1
+      FimSe
+      cont <- cont + 1
+   Ate(cont > numero)
+   Escreval("Ao todo existem ", contaD, " valores divisíveis")
+   Se(contaD = 2)entao
+      Escreval(numero, " é um número primo")
+   Senao
+      Escreval(numero, " não é um número primo")
+   FimSe
+Fimalgoritmo
