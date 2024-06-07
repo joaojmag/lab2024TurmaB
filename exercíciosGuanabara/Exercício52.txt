@@ -1,0 +1,35 @@
+Algoritmo "analisadorValores"
+
+Var
+   cont, soma, diviCinco, nulos, pares, contN, valor, numero: inteiro
+   media: real
+Inicio
+   contN <- 1
+   soma <- 0
+   diviCinco <- 0
+   nulos <- 0
+   pares <- 0
+   valor <- 0
+   Para cont <- 1 ate 5 faca
+      Escreval("Escreva o ", contN, " valor")
+      Leia(numero)
+      contN <- contN + 1
+      soma <- soma + numero
+      Se(numero % 5 = 0) e (numero <> 0) entao
+         diviCinco <- diviCinco + 1
+      FimSe
+      Se(numero = 0)entao
+         nulos <- nulos + 1
+      FimSe
+      Se(numero % 2 = 0)entao
+         pares <- pares + numero
+      FimSe
+   FimPara
+   media <- soma / 5
+   Escreval("A soma entre os valores é: ", soma)
+   Escreval("A média entre os valores é: ", media)
+   Escreval("Número de valores divisíveis por 5: ", diviCinco)
+   Escreval("Valores nulos: ", nulos)
+   Escreval("A soma dos valores pares é: ", pares)
+
+Fimalgoritmo
