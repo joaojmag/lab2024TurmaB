@@ -1,0 +1,11 @@
+Algoritmo "valoresParesRegressivo"
+
+Var
+   cont, valor: inteiro
+Inicio
+   Escreval("Digite um valor")
+   Leia(valor)
+   Para cont <- valor ate 0 passo -2 faca
+         Escreval(cont)
+   FimPara
+Fimalgoritmo
