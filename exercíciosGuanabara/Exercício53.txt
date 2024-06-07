@@ -1,0 +1,29 @@
+
+Var
+   peso, maisPesado: real
+   nome, pesado: caractere
+   cont: inteiro
+Procedimento topo()
+Inicio
+   LimpaTela
+   Escreval("-----------------------------------")
+   Escreval("D E T E C T O R   D E   P E S A D O")
+   Escreval("Maior peso até agora: ", maisPesado, "kg")
+   Escreval("-----------------------------------")
+FimProcedimento
+Inicio
+   topo()
+   Para cont <- 1 ate 5 faca
+      Escreval("Digite o nome: ")
+      Leia(nome)
+      Escreval("Digite o peso de ", nome, ":")
+      Leia(peso)
+      Se(peso > maisPesado)entao
+         maisPesado <- peso
+         pesado <- nome
+      FimSe
+      topo()
+   FimPara
+   topo()
+   Escreval("A pessoa mais pesada foi ", pesado, ", com ", maisPesado, " quilos.")
+Fimalgoritmo
