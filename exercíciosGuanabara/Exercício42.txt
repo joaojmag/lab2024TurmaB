@@ -1,0 +1,30 @@
+Algoritmo "superCont"
+
+Var
+   cont, numeroEscolha: inteiro
+
+
+Inicio
+   Repita
+      Escreval("MENU")
+      Escreval("(1) Para contar de 1 até 10")
+      Escreval("(2) Para contar de 10 até 1")
+      Escreval("(3) Para sair")
+      Leia(numeroEscolha)
+      Escolha numeroEscolha
+      Caso 1
+         cont <- 1
+         Repita
+            Escreval(cont)
+            cont <- cont + 1
+         Ate(cont > 10)
+      Caso 2
+         cont <- 10
+         Repita
+            Escreval(cont)
+            cont <- cont - 1
+         Ate(cont < 1)
+      FimEscolha
+   Ate(numeroEscolha = 3)
+
+Fimalgoritmo
