@@ -1,0 +1,11 @@
+Algoritmo "valoresPares"
+
+Var
+   cont, valor: inteiro
+Inicio
+   Escreval("Digite um valor")
+   Leia(valor)
+   Para cont <- 0 ate valor passo 2 faca
+         Escreval(cont)
+   FimPara
+Fimalgoritmo
