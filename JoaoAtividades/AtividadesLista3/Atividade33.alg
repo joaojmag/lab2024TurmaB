@@ -6,7 +6,9 @@ var
    
    
 inicio
+      escreval ("------------------------------------------------")
       escreval ("Vamos fazer seu emprestimo bancario, para você comprar sua casa.")
+      escreval ("------------------------------------------------")
       escreval ("Primeiro precisamos de algumas informações")
       escreval ("Qual o valor da casa?")
       leia (casa)
