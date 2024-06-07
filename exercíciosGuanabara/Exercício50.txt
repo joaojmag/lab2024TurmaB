@@ -1,0 +1,11 @@
+Algoritmo "combinacao"
+
+Var
+   cont1, cont2: inteiro
+Inicio
+   Para cont1 <- 1 ate 3 faca
+      Para cont2 <- 1 ate 3 faca
+         Escreval(cont1, cont2)
+      FimPara
+   FimPara
+Fimalgoritmo
