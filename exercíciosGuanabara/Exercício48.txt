@@ -1,0 +1,20 @@
+Algoritmo "quantosEntre0e10"
+
+Var
+   cont, valor, contNumeros, soma: inteiro
+Inicio
+   contNumeros <- 0
+   soma <- 0
+   Para cont <- 1 ate 6 faca
+      Escreval("Digite um valor")
+      Leia(valor)
+      Se(valor >= 0) e (valor <= 10)entao
+         contNumeros <- contNumeros + 1
+         Se(valor % 2 = 1)entao
+            soma <- soma + valor
+         FimSe
+      FimSe
+   FimPara
+   Escreval("O número de valores digitados que são menor que 10 e maior que 0 são ", contNumeros)
+   Escreval("A soma dos números ímpares entre 0 e 10 digitados é ", soma)
+Fimalgoritmo
