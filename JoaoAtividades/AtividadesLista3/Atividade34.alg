@@ -1,16 +1,16 @@
 algoritmo "IMC"
 var
-   M, A, IMC: real
+   massa, altura, IMC: real
 inicio
       escreval ("Calculando IMC")
       escreval ("Digite aqui sua massa (kg)")
-      leia (M)
+      leia (massa)
       escreval ("Agora digite sua altura")
-      leia (A)
-      IMC <- M / (A ^ 2)
+      leia (altura)
+      IMC <- massa / (altura ^ 2)
       escreval("Seu indice de massa corporal (IMC) e de: ", IMC:5:2)
       se (IMC < 18.5) então
-         escreavl (" Você está abaixo do peso")
+         escreval (" Você está abaixo do peso")
       senao
            se (IMC >= 18.5) e (IMC <= 25) entao
               escreval ("Voce esta no seu peso ideal")
