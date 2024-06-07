@@ -1,0 +1,9 @@
+Algoritmo "conta1a10"
+
+Var
+   cont: inteiro
+Inicio
+   Para cont <- 1 ate 10 faca
+      Escreval(cont)
+   FimPara
+Fimalgoritmo
