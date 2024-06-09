@@ -1,7 +1,6 @@
 algoritmo "34Lista"
 var
    altura, peso, imc:real
-   SN:CARACTERE
 inicio
    Escreval("__-__-__-__-__-")
    escreval("Indice de Massa Corporia")
