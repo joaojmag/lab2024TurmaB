@@ -11,7 +11,7 @@ inicio
       leia (anos)
       escreval ("QUAL O SEU GENERO")
       escreval ("[1] PARA MULHER")
-      escreval ("[2{ PARA HOMEM")
+      escreval ("[2] PARA HOMEM")
       leia (genero)
       escolha genero
               caso 1
