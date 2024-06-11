@@ -4,12 +4,12 @@ Var
    numero: inteiro
 Inicio
    numero <- 30
-   Repita
+   Enquanto (numero >= 1) faca
       Se(numero % 4 = 0)entao
          Escreva(" [", numero, "]")
       Senao
          Escreva(numero)
       FimSe
       numero <- numero - 1
-   Ate(numero < 1)
+   FimEnquanto
 Fimalgoritmo
