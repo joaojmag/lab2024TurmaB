@@ -5,11 +5,11 @@ Var
 Inicio
    soma <- 0
    cont <- 1
-   Repita
+   Enquanto (cont <= 7) faca
    Escreval("Digite um número inteiro:")
    Leia(numero)
    cont <- cont + 1
    soma <- soma + numero
-   Ate(cont > 7)
+   FimEnquanto
    Escreval("A soma dos número digitados é: ", soma)
 Fimalgoritmo
