@@ -1,0 +1,39 @@
+Algoritmo "analiseGrupo"
+
+Var
+   idade, cont, mulheres, homens, maisVinte, somaGrupo, somaH: inteiro
+   sexo: caractere
+   mediaG, mediaH: real
+Inicio
+   cont <- 1
+   homens <- 0
+   mulheres <- 0
+   maisVinte <- 0
+   somaGrupo <- 0
+   somaH <- 0
+   Enquanto (cont <= 5) faca
+      Escreval("Qual sua idade?")
+      Leia(idade)
+      Escreval("Qual seu sexo? F ou M")
+      Leia(sexo)
+      Se(sexo = "M")entao
+         homens <- homens + 1
+         somaH <- somaH + idade
+      FimSe
+      somaGrupo <- somaGrupo + idade
+      Se(sexo = "F")entao
+         mulheres <- mulheres + 1
+         Se(idade > 20)entao
+            maisVinte <- maisVinte + 1
+         FimSe
+      FimSe
+      cont <- cont + 1
+   FimEnquanto
+   mediaG <- somaGrupo / 5
+   mediaH <- somaH / homens
+   Escreval("Homens cadastrados: ", homens)
+   Escreval("Mulheres cadastradas: ", mulheres)
+   Escreval("Média idade do grupo: ", mediaG)
+   Escreval("Média idade homens: ", mediaH)
+   Escreval("Mulheres com 20+ anos: ", maisVinte)
+Fimalgoritmo
