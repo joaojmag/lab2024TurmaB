@@ -1,0 +1,17 @@
+Algoritmo "soma6ao100"
+
+Var
+   cont, soma: inteiro
+Inicio
+   soma <- 0
+   Para cont <- 6 ate 100 passo 2 faca
+      Se(cont < 100)entao
+         Escreva(cont, "+")
+         Soma <- soma + cont
+      Senao
+         Escreva(cont)
+         Soma <- soma + cont
+      FimSe
+   FimPara
+   Escreva("=", soma)
+Fimalgoritmo
