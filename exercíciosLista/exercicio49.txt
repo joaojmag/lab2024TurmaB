@@ -7,7 +7,7 @@ Inicio
    cont <- 1
    pares <- 0
    impar <- 0
-   Repita
+   Enquanto (cont <= 6) faca
       Escreval("Digite um número inteiro:")
       Leia(numero)
       Se(numero % 2 = 0)entao
@@ -17,7 +17,7 @@ Inicio
       FimSe
       cont <- cont + 1
       soma <- soma + numero
-   Ate(cont > 6)
+   FimEnquanto
    Escreval("A soma dos número digitados é: ", soma)
    Escreval(pares, " números são pares")
    Escreval(impar, " números são ímpares")
