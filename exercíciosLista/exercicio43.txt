@@ -1,0 +1,15 @@
+Algoritmo "contagem"
+
+Var
+   numero: inteiro
+Inicio
+   numero <- 30
+   Repita
+      Se(numero % 4 = 0)entao
+         Escreva(" [", numero, "]")
+      Senao
+         Escreva(numero)
+      FimSe
+      numero <- numero - 1
+   Ate(numero < 1)
+Fimalgoritmo
