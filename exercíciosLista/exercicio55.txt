@@ -1,0 +1,29 @@
+Algoritmo "sorteador"
+
+Var
+   numero, chute, cont: inteiro
+   acerto: logico
+Inicio
+   cont <- 1
+   Aleatorio 1, 10
+   Leia(numero)
+   Enquanto (cont <= 4) faca
+      Aleatorio off
+      Escreval("Qual seu chute?")
+      Leia(chute)
+      Se(numero = chute)entao
+         Escreval("Você acertou!")
+         cont <- cont + 4
+         acerto <- verdadeiro
+      Senao
+         Escreval("Tente novamente...")
+         cont <- cont + 1
+         acerto <- falso
+      FimSe
+   FimEnquanto
+   Se(acerto = verdadeiro)entao
+      Escreval("Parábens!")
+   Senao
+      Escreval("Número de tentativas excedidas, não foi dessa vez...")
+   FimSe
+Fimalgoritmo
