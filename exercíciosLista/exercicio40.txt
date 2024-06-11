@@ -1,0 +1,12 @@
+Algoritmo "contagem"
+
+Var
+   numero: inteiro
+Inicio
+   numero <- 0
+   Enquanto (numero <= 18) faca
+      Escreva(numero)
+      numero <- numero + 3
+   FimEnquanto
+   Escreva(" Acabou!")
+Fimalgoritmo
