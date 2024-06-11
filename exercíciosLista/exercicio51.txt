@@ -1,0 +1,25 @@
+Algoritmo "maisBarato"
+
+Var
+   cont, maior, menor, valor: inteiro
+Inicio
+   cont <- 1
+   maior <- 0
+   menor <- 0
+   Enquanto (cont <= 8) faca
+      Escreval("Qual o valor do produto?")
+      Leia(valor)
+      Se(menor = 0)entao
+         menor <- valor
+      FimSe
+      Se(valor > maior)entao
+         maior <- valor
+      FimSe
+      Se(menor > valor)entao
+         menor <- valor
+      FimSe
+      cont <- cont + 1
+   FimEnquanto
+   Escreval("Valor do produto mais caro: ", maior, " reais")
+   Escreval("Valor do produto mais barato: ", menor, " reais")
+Fimalgoritmo
