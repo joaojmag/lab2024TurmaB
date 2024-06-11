@@ -6,7 +6,7 @@ Inicio
    cont <- 1
    acimaCinco <- 0
    divideTres <- 0
-   Repita
+   Enquanto (cont <= 20) faca
       Aleatorio 1, 10
       Leia(numero)
       Escreval("Número sorteado: ", numero)
@@ -17,7 +17,7 @@ Inicio
          divideTres <- divideTres + 1
       FimSe
       cont <- cont + 1
-   Ate(cont > 20)
+   FimEnquanto
    Escreval("Números maiores que 5: ", acimaCinco)
    Escreval("Números divisíveis por 3: ", divideTres)
 Fimalgoritmo
