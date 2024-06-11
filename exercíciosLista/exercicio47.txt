@@ -1,0 +1,19 @@
+Algoritmo "soma500ao0"
+
+Var
+   cont, soma: inteiro
+Inicio
+   soma <- 0
+   cont <- 500
+   Repita
+      Se(cont > 0)entao
+         Escreva(cont, "+")
+         Soma <- soma + cont
+      Senao
+         Escreva(cont)
+         Soma <- soma + cont
+      FimSe
+      cont <- cont - 50
+   Ate(cont < 0)
+   Escreva("=", soma)
+Fimalgoritmo
