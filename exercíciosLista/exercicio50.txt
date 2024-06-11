@@ -1,0 +1,23 @@
+Algoritmo "sorteio"
+
+Var
+   numero, cont, acimaCinco, divideTres: inteiro
+Inicio
+   cont <- 1
+   acimaCinco <- 0
+   divideTres <- 0
+   Repita
+      Aleatorio 1, 10
+      Leia(numero)
+      Escreval("Número sorteado: ", numero)
+      Se(numero > 5) entao
+         acimaCinco <- acimaCinco + 1
+      FimSe
+      Se(numero % 3 = 0)entao
+         divideTres <- divideTres + 1
+      FimSe
+      cont <- cont + 1
+   Ate(cont > 20)
+   Escreval("Números maiores que 5: ", acimaCinco)
+   Escreval("Números divisíveis por 3: ", divideTres)
+Fimalgoritmo
