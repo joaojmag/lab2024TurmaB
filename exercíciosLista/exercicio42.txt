@@ -1,0 +1,14 @@
+Algoritmo "contagem"
+
+Var
+   numero, cont: inteiro
+Inicio
+   Escreval("Digite um valor para finalizar a contagem (inteiro)")
+   Leia(numero)
+   cont <- 1
+   Repita
+      Escreva(cont)
+      cont <- cont + 1
+   Ate(cont > numero)
+   Escreva(" Acabou!")
+Fimalgoritmo
