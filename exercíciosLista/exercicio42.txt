@@ -6,9 +6,9 @@ Inicio
    Escreval("Digite um valor para finalizar a contagem (inteiro)")
    Leia(numero)
    cont <- 1
-   Repita
+   Enquanto (cont <= numero) faca
       Escreva(cont)
       cont <- cont + 1
-   Ate(cont > numero)
+   FimEnquanto
    Escreva(" Acabou!")
 Fimalgoritmo
