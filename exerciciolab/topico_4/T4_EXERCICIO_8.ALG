@@ -34,6 +34,10 @@ Inicio
             contador<-contador-condicao
           fimenquanto
           escreval("acabou")
+        senao
+          se(fim = ini) entao
+            escreval("valores são iguais")
+          fimse
         fimse
    fimse
 
