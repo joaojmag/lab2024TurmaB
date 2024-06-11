@@ -13,14 +13,14 @@ Inicio
    Escreval("Último valor: ", ultimoNumero)
    Escreval("De quanto em quanto: ", adiciona)
    Se(numero1 < ultimoNumero)entao
-      Repita
+      Enquanto (numero1 <= ultimoNumero) faca
          Escreva(numero1)
          numero1 <- numero1 + adiciona
-      Ate(numero1 > ultimoNumero)
+      FimEnquanto
    Senao
-      Repita
+      Enquanto (numero1 >= ultimoNumero) faca
          Escreva(numero1)
          numero1 <- numero1 - adiciona
-      Ate(numero1 < ultimoNumero)
+      FimEnquanto
    FimSe
 Fimalgoritmo
