@@ -1,0 +1,15 @@
+Algoritmo "somaNumerosDigitados"
+
+Var
+   numero, soma, cont: inteiro
+Inicio
+   soma <- 0
+   cont <- 1
+   Repita
+   Escreval("Digite um número inteiro:")
+   Leia(numero)
+   cont <- cont + 1
+   soma <- soma + numero
+   Ate(cont > 7)
+   Escreval("A soma dos número digitados é: ", soma)
+Fimalgoritmo
