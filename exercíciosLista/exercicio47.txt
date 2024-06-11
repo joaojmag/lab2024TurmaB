@@ -5,7 +5,7 @@ Var
 Inicio
    soma <- 0
    cont <- 500
-   Repita
+   Enquanto (cont >= 0) faca
       Se(cont > 0)entao
          Escreva(cont, "+")
          Soma <- soma + cont
@@ -14,6 +14,6 @@ Inicio
          Soma <- soma + cont
       FimSe
       cont <- cont - 50
-   Ate(cont < 0)
+   FimEnquanto
    Escreva("=", soma)
 Fimalgoritmo
