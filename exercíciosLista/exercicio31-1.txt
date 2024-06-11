@@ -1,0 +1,93 @@
+Algoritmo "jokenpo"
+
+Var
+   jogada1, jogada2: caractere
+   jogadorMaquina, maquina: inteiro
+Inicio
+   Escreval("Deseja jogar contra a máquina ou com um amigo?")
+   Escreval("Digite 1 para um amigo")
+   Escreval("Digite 2 para máquina")
+   Leia(jogadorMaquina)
+   Escolha jogadorMaquina
+   Caso 1
+      Escreval("Escolha pedra, papel ou tesoura")
+      Leia(jogada1)
+      Escreval("Escolha pedra, papel ou tesoura")
+      Leia(jogada2)
+      Se (jogada1 = "pedra") e (jogada2 = "papel") entao
+         Escreval("O jogador 2 venceu")
+      Senao
+         Se(jogada1 = "pedra") e (jogada2 = "tesoura") entao
+            Escreval("O jogador 1 venceu")
+         Senao
+            Se(jogada1 = "papel") e (jogada2 = "pedra") entao
+               Escreval("O jogador 1 venceu")
+            Senao
+               Se(jogada1 = "papel") e (jogada2 = "tesoura") entao
+                  Escreval("O jogador 2 venceu")
+               Senao
+                  Se(jogada1 = "tesoura") e (jogada2 = "pedra") entao
+                     Escreval("O jogador 2 venceu")
+                  Senao
+                     Se(jogada1 = "tesoura") e (jogada2 = "papel") entao
+                        Escreval("O jogador 1 venceu")
+                     Senao
+                        Se(jogada1 = jogada2) entao
+                           Escreval("Empate")
+                        Senao
+                           Escreval("Escolha inválida")
+                        FimSe
+                     FimSe
+                  FimSe
+               FimSe
+            FimSe
+         FimSe
+      FimSe
+   Caso 2
+      Escreval("Escolha pedra, papel ou tesoura")
+      Leia(jogada1)
+      Aleatorio 1, 3
+      Leia(maquina)
+      Se(maquina = 1)entao
+         jogada2 <- "pedra"
+         Escreval("Máquina escolheu pedra")
+      Senao
+         Se(maquina = 2)entao
+            jogada2 <- "papel"
+            Escreval("Máquina escolheu papel")
+         Senao
+            jogada2 <- "tesoura"
+            Escreval("Máquina escolheu tesoura")
+         FimSe
+      FimSe
+      Se (jogada1 = "pedra") e (jogada2 = "papel") entao
+         Escreval("O jogador 2 venceu")
+      Senao
+         Se(jogada1 = "pedra") e (jogada2 = "tesoura") entao
+            Escreval("O jogador 1 venceu")
+         Senao
+            Se(jogada1 = "papel") e (jogada2 = "pedra") entao
+               Escreval("O jogador 1 venceu")
+            Senao
+               Se(jogada1 = "papel") e (jogada2 = "tesoura") entao
+                  Escreval("O jogador 2 venceu")
+               Senao
+                  Se(jogada1 = "tesoura") e (jogada2 = "pedra") entao
+                     Escreval("O jogador 2 venceu")
+                  Senao
+                     Se(jogada1 = "tesoura") e (jogada2 = "papel") entao
+                        Escreval("O jogador 1 venceu")
+                     Senao
+                        Se(jogada1 = jogada2) entao
+                           Escreval("Empate")
+                        Senao
+                           Escreval("Escolha inválida")
+                        FimSe
+                     FimSe
+                  FimSe
+               FimSe
+            FimSe
+         FimSe
+      FimSe
+    FimEscolha
+Fimalgoritmo
