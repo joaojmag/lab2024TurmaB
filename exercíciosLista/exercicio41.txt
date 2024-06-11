@@ -1,0 +1,12 @@
+Algoritmo "contagem"
+
+Var
+   numero: inteiro
+Inicio
+   numero <- 100
+   Enquanto (numero >= 0) faca
+      Escreva(numero)
+      numero <- numero - 5
+   FimEnquanto
+   Escreva(" Acabou!")
+Fimalgoritmo
