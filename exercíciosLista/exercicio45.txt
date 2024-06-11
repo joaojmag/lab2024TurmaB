@@ -18,9 +18,15 @@ Inicio
          numero1 <- numero1 + adiciona
       FimEnquanto
    Senao
-      Enquanto (numero1 >= ultimoNumero) faca
-         Escreva(numero1)
-         numero1 <- numero1 - adiciona
-      FimEnquanto
+      Se(numero1 > ultimoNumero) entao
+         Enquanto (numero1 >= ultimoNumero) faca
+            Escreva(numero1)
+            numero1 <- numero1 - adiciona
+         FimEnquanto
+      Senao
+         Se(numero1 = ultimoNumero) entao
+            Escreval("O número inicial precisa ser diferente do número final")
+         FimSe
+      FimSe
    FimSe
 Fimalgoritmo
