@@ -1,0 +1,19 @@
+Algoritmo "contagem"
+
+Var
+   numero1, ultimoNumero, adiciona, cont: inteiro
+Inicio
+   Escreval("Digite o número inicial da contagem")
+   Leia(numero1)
+   Escreval("Digite o último número da contagem")
+   Leia(ultimoNumero)
+   Escreval("De quanto em quanto vai ser a contagem?")
+   Leia(adiciona)
+   Escreval("Primeiro valor: ", numero1)
+   Escreval("Último valor: ", ultimoNumero)
+   Escreval("De quanto em quanto: ", adiciona)
+   Repita
+      Escreva(numero1)
+      numero1 <- numero1 + adiciona
+   Ate(numero1 > ultimoNumero)
+Fimalgoritmo
