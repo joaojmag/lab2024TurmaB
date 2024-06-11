@@ -6,10 +6,10 @@ Inicio
    soma <- 0
    cont <- 1
    Enquanto (cont <= 7) faca
-   Escreval("Digite um número inteiro:")
-   Leia(numero)
-   cont <- cont + 1
-   soma <- soma + numero
+      Escreval("Digite um número inteiro:")
+      Leia(numero)
+      cont <- cont + 1
+      soma <- soma + numero
    FimEnquanto
    Escreval("A soma dos número digitados é: ", soma)
 Fimalgoritmo
