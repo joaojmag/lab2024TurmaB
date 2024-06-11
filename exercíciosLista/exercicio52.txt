@@ -1,0 +1,33 @@
+Algoritmo "idadeGrupo"
+
+Var
+   idade, maisDezoito, menosCinco, maior, cont, soma: inteiro
+   media: real
+Inicio
+   cont <- 1
+   maisDezoito <- 0
+   menosCinco <- 0
+   maior <- 0
+   soma <- 0
+   Enquanto (cont <= 10) faca
+      Escreval("Qual a idade?")
+      Leia(idade)
+      soma <- soma + idade
+      Se(idade > 18) entao
+         maisDezoito <- maisDezoito + 1
+      FimSe
+      Se(idade < 5)entao
+         menosCinco <- menosCinco + 1
+      FimSe
+      Se(maior < idade)entao
+         maior <- idade
+      FimSe
+      cont <- cont + 1
+   FimEnquanto
+   media <- soma / 10
+   Escreval("Média de idade do grupo: ", media)
+   Escreval("Número de pesoas +18: ", maisDezoito)
+   Escreval("Número de pessoas -5: ", menosCinco)
+   Escreval("Maior idade do grupo: ", maior)
+
+Fimalgoritmo
