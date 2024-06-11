@@ -12,8 +12,8 @@ Inicio
    Escreval("Primeiro valor: ", numero1)
    Escreval("Último valor: ", ultimoNumero)
    Escreval("De quanto em quanto: ", adiciona)
-   Repita
+   Enquanto (numero1 <= ultimoNumero) faca
       Escreva(numero1)
       numero1 <- numero1 + adiciona
-   Ate(numero1 > ultimoNumero)
+   FimEnquanto
 Fimalgoritmo
