@@ -12,5 +12,5 @@ escreval("A contagem vai começar")
    fimpara
    //
    escreval
-   escreval("Acabou!")
+   escreval("Acabou!!")
 fimalgoritmo
