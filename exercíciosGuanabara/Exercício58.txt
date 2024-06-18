@@ -1,0 +1,15 @@
+Algoritmo "procedimentoMultiplica"
+
+Var
+   x, y: inteiro
+procedimento multiplicaN(a, b: inteiro)
+var multiplica: inteiro
+inicio
+   multiplica <- a * b
+   Escreval("A multiplicação de ", a, " e ", b, " é: ", multiplica)
+FimProcedimento
+Inicio
+   x <- 5
+   y <- 9
+   multiplicaN(x, y)
+Fimalgoritmo
