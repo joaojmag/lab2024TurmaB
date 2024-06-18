@@ -1,0 +1,19 @@
+Algoritmo "vetor"
+
+Var
+   n: vetor[1..7] de inteiro
+   i, pares: inteiro
+Inicio
+   pares <- 0
+   para i <- 1 ate 7 faca
+      Escreva("Escreva o ", i, "o número: ")
+      leia(n[i])
+   FimPara
+   para i <- 1 ate 7 faca
+      Se(n[i] % 2 = 0) entao
+         pares <- pares + 1
+         Escreval("Há um número par na posição ", i)
+      FimSe
+   FimPara
+   Escreval("Dos números escritos, ", pares, " são pares")
+Fimalgoritmo
