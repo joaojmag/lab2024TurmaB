@@ -1,0 +1,22 @@
+Algoritmo "nomeC"
+
+Var
+   nome: caractere
+   apenasC: vetor[1..10] de caractere
+   cont, total: inteiro
+Inicio
+   total <- 0
+   Para cont <- 1 ate 10 faca
+      Escreval("Digite seu nome: ")
+      Leia(nome)
+      Se(copia(maiusc(nome), 1, 1) = "C") entao
+         total <- total + 1
+         apenasC[total] <- nome
+      FimSe
+   FimPara
+   LimpaTela
+   Escreval("LISTAGEM FINAL")
+   Para cont <- 1 ate total faca
+      Escreval(apenasC[cont])
+   FimPara
+Fimalgoritmo
