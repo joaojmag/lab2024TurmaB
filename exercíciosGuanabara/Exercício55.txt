@@ -1,0 +1,17 @@
+Algoritmo "procedimentoParImpar"
+
+Var
+   n: inteiro
+Procedimento parOuImpar(v: inteiro)
+Inicio
+   Se (v % 2 = 0) entao
+      Escreval("O número ", n, " é par")
+   Senao
+      Escreval("O número ", n, " é ímpar")
+   FimSe
+FimProcedimento
+Inicio
+   Escreval("Digite um número: ")
+   Leia(n)
+   parOuImpar(n)
+Fimalgoritmo
