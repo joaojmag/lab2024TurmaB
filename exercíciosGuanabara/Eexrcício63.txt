@@ -1,0 +1,20 @@
+Algoritmo "funcaoPronta"
+
+Var
+   nome: caractere
+   c: inteiro
+Inicio
+   Escreval("Digite seu nome: ")
+   Leia(nome)
+   Escreval("Total de letras do seu nome: ", compr(nome))
+   Escreval("Seu nome em maiúsculas: ", maiusc(nome))
+   Escreval("Seu nome em minúsculas: ", minusc(nome))
+   Escreval("A primeira letra do seu nome é: ", copia(nome, 1, 1))
+   Escreval("A última ltra do seu nome é: ", copia(maiusc(nome), compr(nome), 1))
+   Escreval("Seu nome tem a letra A na posição: ", pos("A", maiusc(nome)))
+   Escreval("O código da letra A é: ", asc("A"))
+   Escreval("A letra de código 65 é: ", carac(65))
+   Para c <- compr(nome) ate 1 passo -1 faca
+      Escreva(copia(maiusc(nome), c, 1))
+   FimPara
+Fimalgoritmo
