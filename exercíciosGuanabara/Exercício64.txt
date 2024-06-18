@@ -1,0 +1,14 @@
+Algoritmo "vetor"
+
+Var
+   n: vetor[1..4] de inteiro
+   i: inteiro
+Inicio
+   para i <- 1 ate 4 faca
+      Escreva("Escreva o ", i, "o número: ")
+      leia(n[i])
+   FimPara
+   para i <- 1 ate 4 faca
+      Escreva("{", n[i], "}")
+   FimPara
+Fimalgoritmo
