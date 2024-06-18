@@ -1,0 +1,20 @@
+Algoritmo "funcaoFatorial"
+
+Var
+   numero1, resultado: inteiro
+
+funcao fatorial(a: inteiro): inteiro
+var c, soma: inteiro
+Inicio
+   soma <- 1
+   Para c := 1 ate a faca
+      soma <- soma * c
+   FimPara
+   Retorne soma
+FimFuncao
+inicio
+   Escreval("Escreva o valor que deseja fatorar")
+   Leia(numero1)
+   resultado <- fatorial(numero1)
+   Escreval("O resultado da fatoração de ", numero1, " é", resultado)
+Fimalgoritmo
