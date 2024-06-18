@@ -1,0 +1,19 @@
+Algoritmo "parametrosReferencia"
+
+Var
+   x, y: inteiro
+Procedimento soma(var a, b: inteiro)
+Inicio
+   A <- A + 1
+   B <- B + 2
+   Escreval("Valor de A: ", A)
+   Escreval("Valor de B: ", B)
+   Escreval("A soma A + B: ", A + B)
+FimProcedimento
+Inicio
+   X <- 4
+   Y <- 8
+   soma(x, y)
+   Escreval("O valor de x: ", x)
+   Escreval("O valor de y: ", y)
+Fimalgoritmo
