@@ -1,0 +1,35 @@
+Algoritmo "vetorTurma"
+
+Var
+   nome: vetor[1..4] de caractere
+   nota1: vetor[1..4] de real
+   nota2: vetor[1..4] de real
+   media: vetor[1..4] de real
+   somaMedia, mediaTurma: real
+   cont, totalAlunos: inteiro
+Inicio
+   totalAlunos <- 0
+   somaMedia <- 0
+   Para cont <- 1 ate 4 faca
+      Escreval("Aluno ", cont)
+      Escreva("Nome: ")
+      Leia(nome[cont])
+      Escreva("Primeira nota: ")
+      Leia(nota1[cont])
+      Escreva("Segunda nota: ")
+      Leia(nota2[cont])
+      media[cont] <- (nota1[cont] + nota2[cont]) / 2
+      somaMedia <- somaMedia + media[cont]
+   FimPara
+   mediaTurma <- somaMedia / 4
+   LimpaTela
+   Escreval("LISTAGEM DE ALUNOS")
+   Escreval("------------------")
+   Para cont <- 1 ate 4 faca
+      Escreval(nome[cont]:15, media[cont])
+      Se(media[cont] > mediaTurma) entao
+         totalAlunos <- totalAlunos + 1
+      FimSe
+   FimPara
+   Escreval(totalAlunos, " alunos estão acima da média da turma")
+Fimalgoritmo
