@@ -1,0 +1,20 @@
+Algoritmo "funcaoParImpar"
+
+Var
+   numero1: inteiro
+   resultado: caractere
+
+funcao parImpar(a: inteiro): caractere
+Inicio
+   Se(numero1 % 2 = 0) entao
+      retorne "O número é par"
+   Senao
+      retorne "O número é ímpar"
+   FimSe
+FimFuncao
+inicio
+   Escreval("Escreva o valor que deseja saber se é par ou ímpar")
+   Leia(numero1)
+   resultado <- parImpar(numero1)
+   Escreval(resultado)
+Fimalgoritmo
