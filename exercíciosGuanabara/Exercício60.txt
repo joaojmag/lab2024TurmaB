@@ -1,0 +1,19 @@
+Algoritmo "funcaoMultiplica"
+
+Var
+   numero1, numero2, resultado: inteiro
+
+funcao multiplica(a, b: inteiro): inteiro
+var multiplicando: inteiro
+Inicio
+   multiplicando <- a * b
+   Retorne multiplicando
+FimFuncao
+inicio
+   Escreval("Escreva o primeiro valor que deseja multiplicar")
+   Leia(numero1)
+   Escreval("Escreva o segundo valor que deseja multiplicar")
+   Leia(numero2)
+   resultado <- multiplica(numero1, numero2)
+   Escreval("O resultado da multiplicação de ", numero1, " e ", numero2, " é: ", resultado)
+Fimalgoritmo
