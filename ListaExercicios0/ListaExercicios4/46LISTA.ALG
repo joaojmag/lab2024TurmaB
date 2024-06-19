@@ -1,12 +1,14 @@
 algoritmo "46Lista"
 var
-soma, total:inteiro
-cont:inteiro
+soma, total, seis:inteiro
+contador:inteiro
 inicio
-para cont de 6 ate 100 faca
-     escreva(cont:10)
+contador<-6
+enquanto (contador<=100) faca
+     escreva(contador)
+     contador<-contador+2
      escreva()
-fimpara
+fimenquanto
 //
 total<-0
 
