@@ -1,16 +1,17 @@
-algoritmo "43Lista"
+algoritmo "42Lista"
 var
-   cont : inteiro
+   contador, numero: inteiro
 inicio
-escreval("A contagem vai começar")
-   para cont de 35 ate 1 passo -1 faca
-      se (cont mod 4 = 0) entao
-         escreva ("[", cont, "]")
-         senao entao
-         escreva(cont)
-      fimse
-   fimpara
-   //
-   escreval
-   escreval("Acabou!!")
-fimalgoritmo
+      escreval ("contagem ")
+      numero<-29
+      contador <- 0
+      Enquanto (contador <= numero) faca
+               contador <- contador + 1
+               se((contador mod 4) =0) entao
+               escreva("(", contador,")")
+               senao
+               escreva(contador)
+               fimse
+      fimenquanto
+      escreva (" Acabou!")
+Fimalgoritmo
