@@ -1,6 +1,6 @@
 algoritmo "45Lista"
 var
-cont, n1, n2, n3:inteiro
+contador, n1, n2, n3:inteiro
 inicio
 escreval("Primeiro valor")
 leia(n1)
@@ -9,13 +9,31 @@ leia(n2)
 escreval("Incremento")
 leia(n3)
 caso 1
-para cont de n1 ate n2 passo n3 faca
-escreva(cont)
-fimpara
+
+contador <- n1
+Enquanto (contador <= n2) faca
+escreva (contador)
+contador <- contador + n3
+      fimenquanto
+      escreval (" Acabou!")
+
+
+
 caso 2
-para cont de n1 ate n2 passo -n3 faca
-escreva(cont)
-fimpara
+contador <- n2
+Enquanto (contador <= n1) faca
+escreva (contador)
+contador <- contador + n3
+      fimenquanto
+      escreval (" Acabou!")
+
+
+
+
+
+
+
+fimalgoritmo
 
 
 //
