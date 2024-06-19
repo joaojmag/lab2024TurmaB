@@ -16,5 +16,5 @@ para soma de 6 ate 100 faca
     fimse
 fimpara
 escreval
-escreval(" A soma dos numeros impares de 6 ate 100 eh: ", total)
+escreval(" A soma dos numeros de 6 ate 100 eh: ", total)
 fimalgoritmo
