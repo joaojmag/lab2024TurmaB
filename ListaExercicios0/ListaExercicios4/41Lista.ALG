@@ -1,15 +1,11 @@
-algoritmo "semnome"
+algoritmo "41Lista"
 var
-cont, n:inteiro
+   contador: inteiro
 inicio
-escreval("Vai começar a contagem")
-para cont de 100 ate 0 passo -5 faca
-
-escreval(cont:40)
-
-
-fimpara
-//
-Escreval("Acabou!")
-
-fimalgoritmo
+      contador <- 100
+      Enquanto (contador >=0) faca
+      escreva (contador)
+      contador <- contador - 5
+      fimenquanto
+      escreval (" Acabou!")
+Fimalgoritmo
