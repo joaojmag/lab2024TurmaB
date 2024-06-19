@@ -1,17 +1,15 @@
 algoritmo "42Lista"
 var
-cont, n:inteiro
+   contador, numero: inteiro
 inicio
-escreval("Vai começar a coontagem!, onde paramos mesmo?(numeros +)")
-escreval
-leia(n)
-para cont de n ate 35 passo 1 faca
-
-escreval(cont:40)
-
-
-fimpara
-//
-Escreval("Acabou!")
-
-fimalgoritmo
+escreval ("Digite um numero: ")
+leia (numero)
+contador <- 0
+Enquanto (contador <= numero) faca
+escreva (contador)
+contador <- contador + 1
+      fimenquanto
+      escreval (" Acabou!")
+      
+      
+Fimalgoritmo
