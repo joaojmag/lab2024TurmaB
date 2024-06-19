@@ -4,8 +4,8 @@ var
 inicio
       contador <- 6
       Enquanto (contador <=11) faca
-               escreval (contador)
+               escreva (contador)
                contador <- contador + 1
       fimenquanto
-      escreval ("Acabou!")
+      escreval (" Acabou!")
 fimalgoritmo
