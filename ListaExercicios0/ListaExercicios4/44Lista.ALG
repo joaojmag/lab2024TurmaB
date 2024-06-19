@@ -1,6 +1,6 @@
-algoritmo "semnome"
+algoritmo "44Lista"
 var
-cont, n1, n2, n3:inteiro
+contador, n1, n2, n3:inteiro
 inicio
 escreval("Primeiro valor")
 leia(n1)
@@ -9,16 +9,17 @@ leia(n2)
 escreval("Incremento")
 leia(n3)
 
-para cont de n1 ate n2 passo n3 faca
-escreval
-escreva(cont)
+contador <- n1
+Enquanto (contador <= n2) faca
+escreva (contador)
+contador <- contador + n3
+      fimenquanto
+      escreval (" Acabou!")
 
 
 
 
-fimpara
-//
-escreval
-Escreval("Acabou!")
+
+
 
 fimalgoritmo
