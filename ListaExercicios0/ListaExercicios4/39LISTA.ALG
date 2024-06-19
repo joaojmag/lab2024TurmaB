@@ -1,15 +1,11 @@
 algoritmo "39Lista"
 var
-cont, n:inteiro
+   contador: inteiro
 inicio
-escreval("Vai começar a contagem")
-para cont de 10 ate 3 passo -1 faca
-
-escreval(cont:40)
-
-
-fimpara
-//
-Escreval("Acabou!")
-
-fimalgoritmo
+      contador <- 10
+      Enquanto (contador >=3) faca
+      escreva (contador)
+      contador <- contador - 1
+      fimenquanto
+      escreval (" Acabou!!")
+Fimalgoritmo
