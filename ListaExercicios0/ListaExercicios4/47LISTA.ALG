@@ -1,12 +1,14 @@
-algoritmo "47Lista"
+algoritmo "46Lista"
 var
-soma, total:inteiro
-cont:inteiro
+soma, total, seis:inteiro
+contador:inteiro
 inicio
-para cont de 500 ate 0 passo -50 faca
-     escreva(cont)
+contador<-0
+enquanto (contador<=500) faca
+     escreva(contador)
+     contador<-contador+50
      escreva()
-fimpara
+fimenquanto
 //
 total<-0
 
