@@ -1,0 +1,26 @@
+Algoritmo "matrizIdentidadeSoma"
+
+Var
+   numeros: vetor[1..4, 1..4] de inteiro
+   i, j, somaDiagonalP: inteiro
+Inicio
+   somaDiagonalP <- 0
+   Para i <- 1 ate 4 faca
+      Para j<- 1 ate 4 faca
+         Escreval("Digite o valor da posição [", i, ",", j, "]")
+         Leia(numeros[i, j])
+         Se(i = j)entao
+            somaDiagonalP <- somaDiagonalP + numeros[i, j])
+         FimSe
+      FimPara
+   FimPara
+   LimpaTela
+   Escreval("A soma dos valores da diagonal principal é: ", somaDiagonalP)
+   Escreval("------------------------------------------------")
+   Para i <- 1 ate 4 faca
+      Para j <- 1 ate 4 faca
+         Escreva(numeros[i, j]:4)
+      FimPara
+      Escreval()
+   FimPara
+FimAlgoritmo
