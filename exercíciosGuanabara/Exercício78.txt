@@ -1,0 +1,68 @@
+algoritmo "dissecandoMatrizes"
+
+var
+   numeros: vetor[1..4, 1..4] de inteiro
+   i, j, resposta: inteiro
+
+inicio
+   Para i <- 1 ate 4 faca
+      Para j <- 1 ate 4 faca
+         Escreval("Escreva o número da posição [", i, ",", j, "]")
+         Leia(numeros[i, j])
+      FimPara
+   FimPara
+   LimpaTela
+   Repita
+      Escreval("--------------------------")
+      Escreval("[1] Mostrar a Matriz")
+      Escreval("[2] Mostrar a Diagonal Principal")
+      Escreval("[3] Mostrar o Triângulo Superior")
+      Escreval("[4] Mostrar o Triângulo Inferior")
+      Escreval("[5] Sair")
+      Leia(resposta)
+      LimpaTela
+      Escolha resposta
+      Caso 1
+         Para i <- 1 ate 4 faca
+            Para j <- 1 ate 4 faca
+               Escreva(numeros[i, j])
+            FimPara
+            Escreval()
+         FimPara
+      Caso 2
+         Para i <- 1 ate 4 faca
+            Para j <- 1 ate 4 faca
+               Se(j = i)entao
+                  Escreva(numeros[i, j])
+               Senao
+                  Escreva("   ")
+               FimSe
+            FimPara
+            Escreval()
+         FimPara
+      Caso 3
+         Para i <- 1 ate 4 faca
+            Para j <- 1 ate 4 faca
+               Se(j > i)entao
+                  Escreva(numeros[i, j])
+               Senao
+                  Escreva("  ")
+               FimSe
+            FimPara
+            Escreval()
+         FimPara
+      Caso 4
+         Para i <- 1 ate 4 faca
+            Para j <- 1 ate 4 faca
+               Se(j < i)entao
+                  Escreva(numeros[i, j])
+               Senao
+                  Escreva("  ")
+               FimSe
+            FimPara
+            Escreval()
+         FimPara
+      Fimescolha
+   Ate(resposta = 5)
+
+fimalgoritmo
