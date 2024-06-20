@@ -1,0 +1,27 @@
+Algoritmo "matrizPar"
+
+Var
+   numeros: vetor[1..3, 1..3] de inteiro
+   i, j, resultado: inteiro
+
+funcao pares(): inteiro
+var soma: inteiro
+
+Inicio
+   soma <- 0
+   Se(numeros[i, j] % 2 = 0) entao
+      soma <- soma + 1
+   FimSe
+   Retorne soma
+FimFuncao
+Inicio
+   resultado <- 0
+   Para i <- 1 ate 3 faca
+      Para j <- 1 ate 3 faca
+         Escreval("Escreva o valor da posição [", i, ",", j, "]")
+         Leia(numeros[i, j])
+         resultado <- resultado + pares
+      FimPara
+   FimPara
+   Escreval("Quantidade de pares digitados: ", resultado)
+FimAlgoritmo
