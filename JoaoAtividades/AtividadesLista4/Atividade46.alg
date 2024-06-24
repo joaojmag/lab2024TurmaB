@@ -5,7 +5,7 @@ var
 inicio
       contador <- 6
       soma <- 0
-      enquanto (contador <= 15) faca
+      enquanto (contador <= 100) faca
                escreval (contador)
                soma <- soma + contador
                contador <- contador + 2
