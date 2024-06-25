@@ -1,0 +1,16 @@
+Algoritmo "lerNumeros"
+
+Var
+   numero, cont, resposta: inteiro
+   soma: real
+
+Inicio
+   soma <- 0
+   Enquanto resposta <> 1111 faca
+      Escreval("Digite o número que deseja somar, caso queira encerrar digite '1111':")
+      Leia(resposta)
+      Soma <- soma + resposta
+   FimEnquanto
+   soma <- soma - 1111
+   Escreval("A soma dos números digitados é: ", soma)
+Fimalgoritmo
