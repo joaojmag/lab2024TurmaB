@@ -1,0 +1,39 @@
+Algoritmo "idade"
+
+Var
+   idade, vinteUmMais, somaIdade, pessoas: inteiro
+   media: real
+   resposta: caractere
+Inicio
+   vinteUmMais <- 0
+   somaIdade <- 0
+   pessoas <- 0
+   Escreval("Qual sua idade?")
+   Leia(idade)
+   somaIdade <- somaIdade + idade
+   pessoas <- pessoas + 1
+   Se(idade > 21)entao
+      vinteUmMais <- vinteUmMais + 1
+   FimSe
+   Escreval("Deseja continuar? (s/n)")
+   Leia(resposta)
+   LimpaTela
+   Enquanto resposta = "s" faca
+      Escreval("Qual sua idade?")
+      Leia(idade)
+      somaIdade <- somaIdade + idade
+      pessoas <- pessoas + 1
+      Se(idade >= 21)entao
+         vinteUmMais <- vinteUmMais + 1
+      FimSe
+      Escreval("Deseja continuar? (s/n)")
+      Leia(resposta)
+      LimpaTela
+   FimEnquanto
+   media <- somaIdade / pessoas
+   Escreval("--------------------------------------")
+   Escreval("Foram digitadas ", pessoas, "  idades")
+   Escreval("A médias entre as idades digitadas é ", media)
+   Escreval(vinteUmMais, " pessoas tem 21 anos ou mais")
+   Escreval("--------------------------------------")
+Fimalgoritmo
