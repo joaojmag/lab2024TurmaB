@@ -1,0 +1,45 @@
+Algoritmo "salario"
+
+Var
+   numero: inteiro
+   somaMulheres, somaHomens, salario: real
+   sexo, resposta: caractere
+
+Inicio
+   somaMulheres <- 0
+   somaHomens <- 0
+   Escreval("Digite seu sexo (masculino/ feminino):")
+   Leia(sexo)
+   Escreval("Digite seu salário:")
+   Leia(salario)
+   Se(sexo = "feminino")entao
+      somaMulheres <- somaMulheres + salario
+   Senao
+      Se(sexo = "masculino")entao
+         somaHomens <- somaHomens + salario
+      Senao
+         Escreval("Sexo inválido")
+      FimSe
+   FimSe
+   Escreval("Deseja continuar? (s/n)")
+   Leia(resposta)
+   Enquanto resposta = "s" faca
+      Escreval("Digite seu sexo (masculino/ feminino):")
+      Leia(sexo)
+      Escreval("Digite seu salário:")
+      Leia(salario)
+      Se(sexo = "feminino")entao
+         somaMulheres <- somaMulheres + salario
+      Senao
+         Se(sexo = "masculino")entao
+            somaHomens <- somaHomens + salario
+         Senao
+            Escreval("Sexo inválido")
+         FimSe
+      FimSe
+      Escreval("Deseja continuar? (s/n)")
+      Leia(resposta)
+   FimEnquanto
+   Escreval("A soma do salário dos homens é: ", somaHomens)
+   Escreval("A soma do salário das mulheres é: ", somaMulheres)
+Fimalgoritmo
