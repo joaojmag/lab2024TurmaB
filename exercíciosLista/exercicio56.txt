@@ -1,7 +1,7 @@
 Algoritmo "lerNumeros"
 
 Var
-   numero, cont, resposta: inteiro
+   numero, resposta: inteiro
    soma: real
 
 Inicio

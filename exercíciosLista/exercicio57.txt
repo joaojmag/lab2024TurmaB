@@ -1,7 +1,6 @@
 Algoritmo "salario"
 
 Var
-   numero: inteiro
    somaMulheres, somaHomens, salario: real
    sexo, resposta: caractere
 

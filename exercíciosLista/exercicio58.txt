@@ -1,0 +1,20 @@
+Algoritmo "alunos"
+
+Var
+   idade, somaAlunos, somaIdade: inteiro
+   media: real
+
+Inicio
+   somaAlunos <- 0
+   somaIdade <- 0
+   Enquanto idade <> 999 faca
+      Escreval("Digite a idade do aluno, caso queira encerrar, digite '999': ")
+      Leia(idade)
+      Se(idade <> 999)entao
+         somaAlunos <- somaAlunos + 1
+         somaIdade <- somaIdade + idade
+      FimSe
+   FimEnquanto
+   media <- somaIdade / somaAlunos
+   Escreval("Existem ", somaAlunos, " alunos na turma e a média de idade entre eles é ", media)
+Fimalgoritmo
