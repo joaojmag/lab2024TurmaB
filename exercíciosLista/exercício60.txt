@@ -1,0 +1,77 @@
+Algoritmo "idadeHomensMulheres"
+
+Var
+   nome, sexo, nomeMaisVelha, nomeMaisJovem, resposta: caractere
+   idade, maisVelha, maisJovem, somaIdade, menoresDezoito, maisTrinta, pessoas: inteiro
+   media: real
+
+Inicio
+   maisVelha <- 0
+   maisJovem <- 0
+   somaIdade <- 0
+   menoresDezoito <- 0
+   maisTrinta <- 0
+   pessoas <- 0
+   Escreval("Digite seu nome: ")
+   Leia(nome)
+   Escreval("Digite sua idade: ")
+   Leia(idade)
+   Escreval("Digite seu sexo (masculino/feminino)")
+   Leia(sexo)
+   Se((idade > maisVelha) ou (maisVelha = 0))entao
+      nomeMaisVelha <- nome
+      maisVelha <- idade
+   FimSe
+   Se(sexo = "feminino")entao
+      Se((maisJovem > idade) ou (maisJovem = 0))entao
+         nomeMaisJovem <- nome
+         maisJovem <- idade
+      FimSe
+      Se(idade < 18)entao
+         menoresDezoito <- menoresDezoito + 1
+      FimSe
+   FimSe
+   somaIdade <- somaIdade + idade
+   pessoas <- pessoas + 1
+   Se((sexo = "masculino") e (idade > 30))entao
+      maisTrinta <- maisTrinta + 1
+   FimSe
+   Escreval("Deseja continuar (s/n)?")
+   Leia(resposta)
+   Enquanto resposta = "s" faca
+      Escreval("Digite seu nome: ")
+      Leia(nome)
+      Escreval("Digite sua idade: ")
+      Leia(idade)
+      Escreval("Digite seu sexo (masculino/feminino)")
+      Leia(sexo)
+      Se((idade > maisVelha) ou (maisVelha = 0))entao
+         nomeMaisVelha <- nome
+         maisVelha <- idade
+      FimSe
+      Se(sexo = "feminino")entao
+         Se((maisJovem > idade) ou (maisJovem = 0))entao
+            nomeMaisJovem <- nome
+            maisJovem <- idade
+         FimSe
+         Se(idade < 18)entao
+            menoresDezoito <- menoresDezoito + 1
+         FimSe
+      FimSe
+      somaIdade <- somaIdade + idade
+      pessoas <- pessoas + 1
+      Se((sexo = "masculino") e (idade > 30))entao
+         maisTrinta <- maisTrinta + 1
+      FimSe
+      Escreval("Deseja continuar (s/n)?")
+      Leia(resposta)
+   FimEnquanto
+   LimpaTela
+   media <- somaIdade/pessoas
+   Escreval("O nome da pessoa mais velha é: ", nomeMaisVelha)
+   Escreval("O nome da mulher mais jovem é: ", nomeMaisJovem)
+   Escreval("A média de idade do grupo é: ", media)
+   Escreval("O número de homens com mais de 30 anos é: ", maisTrinta)
+   Escreval("O número de mulheres com menos de 18 anos é: ", menoresDezoito)
+
+Fimalgoritmo
