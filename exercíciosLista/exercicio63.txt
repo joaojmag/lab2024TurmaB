@@ -1,0 +1,44 @@
+Algoritmo "analiseValores"
+
+Var
+   numero, soma, menorValor, quantidade, pares: inteiro
+   resposta: caractere
+   media: real
+Inicio
+   quantidade <- 0
+   soma <- 0
+   pares <- 0
+   Escreval("Digite o primeiro valor que deseja somar: ")
+   Leia(numero)
+   soma <- soma + numero
+   menorValor <- numero
+   quantidade <- quantidade + 1
+   Se(numero % 2 = 0)entao
+      pares <- pares + 1
+   FimSe
+   Escreval("Deseja continuar? (s/n)")
+   Leia(resposta)
+   LimpaTela
+   Enquanto resposta = "s" faca
+      Escreval("Digite o prióximo valor que deseja somar: ")
+      Leia(numero)
+      soma <- soma + numero
+      Se(menorValor > numero)entao
+         menorValor <- numero
+      FimSe
+      quantidade <- quantidade + 1
+      Se(numero % 2 = 0)entao
+         pares <- pares + 1
+      FimSe
+      Escreval("Deseja continuar? (s/n)")
+      Leia(resposta)
+      LimpaTela
+   FimEnquanto
+   media <- soma / quantidade
+   Escreval("-----------------------------------")
+   Escreval("O somatório entre os valores digitados é: ", soma)
+   Escreval("O menor valor digitado foi: ", menorValor)
+   Escreval("A média entre os valores digitados é: ", media)
+   Escreval("A quantidade de pares digitados é: ", pares)
+   Escreval("-----------------------------------")
+Fimalgoritmo
