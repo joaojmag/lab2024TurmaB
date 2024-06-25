@@ -1,0 +1,56 @@
+Algoritmo "idadeHomensMulheres"
+
+Var
+   mediaHomens, idadeHomens, somaHomens: real
+   menorIdade, maiorIdade, idade: inteiro
+   sexo, resposta: caractere
+
+Inicio
+   somaHomens <- 0
+   maiorIdade <- 0
+   menorIdade <- 0
+   idadeHomens <- 0
+   Escreval("Digite seu sexo (masculino/feminino):")
+   Leia(sexo)
+   Escreval("Digite sua idade:")
+   Leia(idade)
+   Se(idade > maiorIdade)entao
+      maiorIdade <- idade
+   FimSe
+   Se(sexo = "masculino")entao
+      somaHomens <- somaHomens + 1
+      idadeHomens <- idadeHomens + idade
+   FimSe
+   Se(sexo = "feminino")entao
+      Se((menorIdade > idade) ou (menorIdade = 0))entao
+         menorIdade <- idade
+      FimSe
+   FimSe
+   Escreval("Deseja continuar? (s/n)")
+   Leia(resposta)
+   Enquanto resposta = "s" faca
+      Escreval("Digite seu sexo (masculino/feminino):")
+      Leia(sexo)
+      Escreval("Digite sua idade:")
+      Leia(idade)
+      Se(idade > maiorIdade)entao
+         maiorIdade <- idade
+      FimSe
+      Se(sexo = "masculino")entao
+         somaHomens <- somaHomens + 1
+         idadeHomens <- idadeHomens + idade
+      FimSe
+      Se(sexo = "feminino")entao
+         Se((menorIdade > idade) ou (menorIdade = 0))entao
+            menorIdade <- idade
+         FimSe
+      FimSe
+      Escreval("Deseja continuar? (s/n)")
+      Leia(resposta)
+   FimEnquanto
+   mediaHomens <- idadeHomens / somaHomens
+   Escreval("A maior idade lida é: ", maiorIdade)
+   Escreval("O número de homens cadastrados é: ", somaHomens)
+   Escreval("A idade da mulher mais jovem é: ", menorIdade)
+   Escreval("A média da idade dos homens é: ", mediaHomens)
+Fimalgoritmo
