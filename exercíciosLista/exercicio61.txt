@@ -1,0 +1,14 @@
+Algoritmo "contagem"
+
+Var
+   cont, numero: inteiro
+Inicio
+   cont <- 1
+   numero <- 0
+   Enquanto cont < 11 faca
+      Escreva(numero, ", ")
+      cont <- cont + 1
+      numero <- numero + 3
+   FimEnquanto
+   Escreva(numero, " Acabou!")
+Fimalgoritmo
