@@ -8,7 +8,7 @@ inicio
    escreval ("--------------------------------------------")
    contador <- 1
    somaAltura <- 0
-   numPessoas <- 3
+   numPessoas <- 7
    maisNoventa <- 0
       enquanto (contador <= numPessoas) faca
          escreval (contador, "° Pessoa")
