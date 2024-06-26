@@ -1,9 +1,9 @@
 algoritmo "semnome"
 var
    contador, numPessoas: inteiro
-   idade, somaIdade, somaIdadeHomens, homem, mulher, sexo, mulheres, media, mediaHomens, mulheresMaisDeVinte: real
+   idade, somaIdade, somaIdadeHomens, homem, mulher, sexo, mulheres, media, mediaHomens, mulheresMaisDeVinte, homem2, mulher2: real
 inicio
-      numPessoas <- 5
+      numPessoas <- 3
       contador <- 1
       idade <- 0
       somaIdadeHomens <- 0
@@ -29,29 +29,42 @@ inicio
                fimse
 
          fimescolha
+         se (sexo = 1) entao
+            homem2 <- sexo
+         fimse
+
+         se (sexo = 2) entao
+            mulher2 <- sexo
+         fimse
 
          somaIdade <- somaIdade + idade
          media <- somaIdade / numPessoas
          contador <- contador + 1
       fimenquanto
+      
+      
 
 
       se (sexo = 1) entao
          escreval ("Numeros de homens cadastrados: ", homem)
          escreval ("Media de idade dos homens: ", mediaHomens:5:2)
-      senao (sexo = 2)
-            se (sexo = 2) entao
+
+      fimse
+      
+      se (sexo = 2) entao
             escreval ("Numeros de mulheres cadastradas: ", mulher)
             escreval ("Numero de mulheres com mais de vinte anos: ", mulheresMaisDeVinte)
-            senao (sexo = 1) e (sexo = 2)
+      fimse
+
+      se (homem2 = 1) e (mulher2 = 2) entao
                escreval ("Numeros de homens cadastrados: ", homem)
                escreval ("Media de idade dos homens: ", mediaHomens:5:2)
                escreval ("Numeros de mulheres cadastradas: ", mulher)
                escreval ("Numero de mulheres com mais de vinte anos: ", mulheresMaisDeVinte)
-            
-            fimse
 
       fimse
+
+
       escreval ("Media de idade de pessoas cadastradas: ", media:5:2)
 
 
