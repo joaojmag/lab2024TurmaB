@@ -29,7 +29,7 @@ Inicio
    media <- soma/idades
    escreval("o numero de idades digitadas foi",idades)
    escreval("---------------------------------")
-   escreval("a media das idades digitadas é",media)
+   escreval("a media das idades digitadas é ",media:3:2)
    escreval("---------------------------------")
    escreval("pessoas maiores de 21 anos",Maior21)
 Fimalgoritmo
