@@ -1,17 +1,26 @@
 Algoritmo "atvlista56"
+//  
+//  
+
 
 Var
+   n,soma,contagem: inteiro
 
-contagem: inteiro
 
 Inicio
- contagem <-0
-  enquanto (contagem<=30)faca
-  escreval(contagem)
-  contagem <- contagem+ 3
-  fimenquanto
-  escreva ("ACABOU :)")
-  
+   contagem <-0
+   escreval ("USE 1111 PARA FINALIZAR")
+   escreval ("--------------------------")
+   enquanto ( n <> 1111)faca
+      escreval (" digite um numero:")
+     	leia(n)
+      se (n <> 1111)entao
+         soma <- soma + n
+      fimse
+   fimenquanto
+
+   escreval ("soma:",soma)
 
 
-Fimalgoritmo
+
+fimalgoritmo
