@@ -10,10 +10,9 @@ Inicio
     leia(numero1)
     escreval("Outro numero" )
     leia (numero2)
+    se(numero1 e numero2<>1111) entao
     total<- numero1 + numero2
        escreval(total)
-       se(numero1 e numero2 =1111) entao
-        escreval("fechado")
-        fimse
-        fimenquanto
+       fimse
+    fimenquanto
 Fimalgoritmo
