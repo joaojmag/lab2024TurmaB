@@ -1,0 +1,13 @@
+Algoritmo "contagemPara"
+
+Var
+   cont, numero: inteiro
+Inicio
+   Escreval("Digite o valor que deseja realizar a contagem:")
+   Leia(numero)
+   LimpaTela
+   Para cont <- 0 ate numero faca
+      Escreva(cont, ", ")
+   FimPara
+   Escreval("FIM!")
+Fimalgoritmo
