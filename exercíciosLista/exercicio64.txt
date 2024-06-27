@@ -1,0 +1,10 @@
+Algoritmo "contagemPara"
+
+Var
+   cont: inteiro
+Inicio
+   Para cont <- 0 ate 40 passo 5 faca
+      Escreva(cont)
+   FimPara
+   Escreva(" Acabou!")
+Fimalgoritmo
