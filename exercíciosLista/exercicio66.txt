@@ -1,0 +1,13 @@
+Algoritmo "tabuada"
+
+Var
+   cont, multiplica, numero: inteiro
+Inicio
+   Escreval("Digite o valor que deseja saber a tabuada:")
+   Leia(numero)
+   LimpaTela
+   Para cont <- 0 ate 10 faca
+      multiplica <- cont * numero
+      Escreval(numero, " x ", cont, " = ", multiplica)
+   FimPara
+Fimalgoritmo
