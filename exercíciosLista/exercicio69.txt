@@ -1,0 +1,20 @@
+Algoritmo "progressaoAritmetica"
+
+Var
+   razao, primeiroTermo, soma, proximoTermo, cont: inteiro
+
+Inicio
+   soma <- 0
+   Escreval("Escreva o primeiro termo da P.A:")
+   Leia(primeiroTermo)
+   Escreval("Escreva a razão da P.A:")
+   Leia(razao)
+   LimpaTela
+   Para cont <- 1 ate 10 faca
+      Escreva(primeiroTermo)
+      soma <- soma + primeiroTermo
+      primeiroTermo <- primeiroTermo + razao
+   FimPara
+   Escreval()
+   Escreval("A soma entre os valores da sequência é: ", soma)
+Fimalgoritmo
