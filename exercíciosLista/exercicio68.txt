@@ -1,0 +1,51 @@
+Algoritmo "analisePessoas"
+
+Var
+   cont, mulheres, homens: inteiro
+   sexo: caractere
+   peso, mediaMulheres, totalMulheres, maiorHomens: real
+Inicio
+   mulheres <- 0
+   homens <- 0
+   Escreval("Digite o sexo da 1a pessoa (feminino/masculino):")
+   Leia(sexo)
+   Escreval("Digite o peso da 1a pessoa (em kg):")
+   Leia(peso)
+   Se(sexo = "feminino")entao
+      mulheres <- mulheres + 1
+      totalMulheres <- peso
+   FimSe
+   Se(sexo = "masculino")entao
+      Se(peso > 100)entao
+         homens <- homens + 1
+      FimSe
+      Se(peso > maiorHomens)entao
+         maiorHomens <- peso
+      FimSe
+   FimSe
+   LimpaTela
+   Para cont <- 2 ate 8 faca
+      Escreval("Digite o sexo da", cont, "a pessoa (feminino/masculino):")
+      Leia(sexo)
+      Escreval("Digite o peso da", cont, "a pessoa (em kg):")
+      Leia(peso)
+      Se(sexo = "feminino")entao
+         mulheres <- mulheres + 1
+         totalMulheres <- totalMulheres + peso
+      FimSe
+      Se(sexo = "masculino")entao
+         Se(peso > 100)entao
+            homens <- homens + 1
+         FimSe
+         Se(peso > maiorHomens)entao
+            maiorHomens <- peso
+         FimSe
+      FimSe
+      LimpaTela
+   FimPara
+   mediaMulheres <- totalMulheres / mulheres
+   Escreval("Foram cadastradas ", mulheres, " mulheres")
+   Escreval(homens, " homens pesam mais de 100 kg")
+   Escreval("A média de peso entre as mulheres é ", mediaMulheres, " kg")
+   Escreval("O maior peso entre os homens é ", maiorHomens, " kg")
+Fimalgoritmo
