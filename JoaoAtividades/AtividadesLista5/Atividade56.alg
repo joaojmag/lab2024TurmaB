@@ -25,9 +25,10 @@ inicio
             
          ate (resposta = "n")
 
-         se (resposta = 1111) entao
+         se (numero = 1111) entao
             escreval ("ERRO! O NUMERO 1111 NÃO PODE SER DIGITADO.")
          fimse
+
          escreval ("A soma dos numeros digitadoos é: ", soma)
 
 
