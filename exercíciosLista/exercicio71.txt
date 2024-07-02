@@ -1,0 +1,14 @@
+Algoritmo "vetor"
+
+Var
+   vet999: vetor[1..8] de inteiro
+   i: inteiro
+Inicio
+   Escreval("________________________________________________________")
+   para i <- 1 ate 8 faca
+      vet999[i] <- 999
+      Escreva(vet999[i], " | ")
+   fimpara
+   Escreval()
+   Escreval("________________________________________________________")
+Fimalgoritmo
