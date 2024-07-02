@@ -1,0 +1,23 @@
+Algoritmo "vetor"
+
+Var
+   vet15: vetor[1..15] de inteiro
+   i: inteiro
+Inicio
+   para i <- 1 ate 15 faca
+      Escreval("Escreva o ", i, "o número:")
+      Leia(vet15[i])
+      LimpaTela
+   fimPara
+   para i <- 1 ate 15 faca
+      Escreva(vet15[i], " | ")
+   fimPara
+   Escreval()
+   Escreval("------------------------------------------------------")
+   Escreval("Os números digitados que são múltiplos de 10 são:")
+   para i <- 1 ate 15 faca
+      Se(vet15[i] % 10 = 0)entao
+         Escreval(vet15[i], " - posição ", i, " do vetor")
+      FimSe
+   fimPara
+Fimalgoritmo
