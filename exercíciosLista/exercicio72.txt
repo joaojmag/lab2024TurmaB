@@ -1,0 +1,16 @@
+Algoritmo "vetor"
+
+Var
+   vet5: vetor[1..10] de inteiro
+   i, j: inteiro
+Inicio
+   j <- 5
+   Escreval("__________________________________________________________")
+   para i <- 1 ate 10 faca
+      vet5[i] <- j
+      j <- j + 5
+      Escreva(vet5[i], " | ")
+   fimpara
+   Escreval()
+   Escreval("__________________________________________________________")
+Fimalgoritmo
