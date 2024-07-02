@@ -1,0 +1,24 @@
+Algoritmo "vetor"
+
+Var
+   sexo: vetor[1..5] de caractere
+   nome: vetor[1..5] de caractere
+   salario: vetor[1..5] de real
+   i: inteiro
+Inicio
+   Para i <- 1 ate 5 faca
+      Escreval("Escreva seu nome: ")
+      Leia(nome[i])
+      Escreval("Escreva seu sexo (masculino/feminino): ")
+      Leia(sexo[i])
+      Escreval("Escreva seu salário: ")
+      Leia(salario[i])
+      LimpaTela
+   FimPara
+   Para i <- 1 ate 5 faca
+      Se((sexo[i] = "feminino") e (salario[i] > 5000))entao
+         Escreval(nome[i], " ------ ", salario[i], " reais")
+      FimSe
+   FimPara
+
+Fimalgoritmo

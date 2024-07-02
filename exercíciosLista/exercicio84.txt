@@ -1,12 +1,12 @@
 Algoritmo "vetor"
 
 Var
-   idade: vetor[1..3] de inteiro
+   idade: vetor[1..9] de inteiro
    nome: vetor[1..9] de caractere
    i, menor: inteiro
 Inicio
    menor <- 0
-   Para i <- 1 ate 3 faca
+   Para i <- 1 ate 9 faca
       Escreval("Digite o nome da ", i, "a pessoa")
       Leia(nome[i])
       Escreval("Digite a idade da ", i, "a pessoa")
@@ -14,7 +14,7 @@ Inicio
       LimpaTela
    FimPara
    Escreval("MENORES DE IDADE")
-   Para i <- 1 ate 3 faca
+   Para i <- 1 ate 9 faca
       Se(idade[i] < 18)entao
          Escreval(nome[i], " -- ", idade[i], " anos")
          menor <- menor + 1
