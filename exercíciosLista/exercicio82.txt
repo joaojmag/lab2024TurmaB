@@ -1,0 +1,35 @@
+Algoritmo "vetor"
+
+Var
+   nota: vetor[1..10] de real
+   i: inteiro
+   soma, acimaMedia, maiorNota, media: real
+
+Inicio
+   soma <- 0
+   acimaMedia <- 0
+   maiorNota <- 0
+   Para i <- 1 ate 10 faca
+      Escreval("Escreva a nota da ", i, "a pessoa")
+      Leia(nota[i])
+      soma <- soma + nota[i]
+      Se(nota[i] > maiorNota)entao
+         maiorNota <- nota[i]
+      FimSe
+      LimpaTela
+   FimPara
+   media <- soma / 10
+   Escreval("A média da turma é: ", media)
+   Para i <- 1 ate 10 faca
+      Se(nota[i] > media)entao
+         acimaMedia <- acimaMedia + 1
+      FimSe
+   FimPara
+   Escreval(acimaMedia, " alunos estão acima da média da turma")
+   Escreval("A maior nota digitada foi ", maiorNota)
+   Para i <- 1 ate 10 faca
+      Se(nota[i] = maiorNota)entao
+         Escreval("A maior nota aparece na posição ", i, " do vetor")
+      FimSe
+   FimPara
+Fimalgoritmo
