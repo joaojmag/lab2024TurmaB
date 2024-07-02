@@ -1,0 +1,18 @@
+Algoritmo "vetor"
+
+Var
+   vet10: vetor[1..10] de inteiro
+   i: inteiro
+Inicio
+   para i <- 1 ate 10 faca
+      Escreval("Escreva o ", i, "o número:")
+      Leia(vet10[i])
+      LimpaTela
+   fimPara
+   Escreval("Os números pares escritos foram: ")
+   para i <- 1 ate 10 faca
+      Se(vet10[i] % 2 = 0)entao
+         Escreval(vet10[i], " - na posição ", i, " do vetor")
+      FimSe
+   fimPara
+Fimalgoritmo
