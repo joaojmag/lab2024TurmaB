@@ -1,0 +1,31 @@
+Algoritmo "vetor"
+
+Var
+   vet30: vetor[1..30] de inteiro
+   i, numero, vezesNumero: inteiro
+Inicio
+   vezesNumero <- 0
+   para i <- 1 ate 30 faca
+      Aleatorio 1,15
+      Leia(vet30[i])
+      LimpaTela
+   fimPara
+   Escreval("Digite um número de 1 a 15: ")
+   Leia(numero)
+   LimpaTela
+   Escreval("Número escolhido : ", numero)
+   Escreval()
+   Escreval()
+   para i <- 1 ate 30 faca
+      Se(vet30[i] = numero)entao
+         Escreval(vet30[i], " foi encontrado na posição ", i, " do vetor")
+         vezesNumero <- vezesNumero + 1
+      FimSe
+   fimPara
+   Escreval()
+   Escreval()
+   Escreval("Vetor: ")
+   para i <- 1 ate 30 faca
+      Escreva(vet30[i], " | ")
+   fimPara
+Fimalgoritmo
