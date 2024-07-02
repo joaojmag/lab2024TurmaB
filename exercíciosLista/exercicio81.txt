@@ -1,0 +1,32 @@
+Algoritmo "vetor"
+
+Var
+   idade: vetor[1..8] de inteiro
+   i, soma, maiorIdade: inteiro
+   media: real
+Inicio
+   soma <- 0
+   maiorIdade <- 0
+   para i <- 1 ate 8 faca
+      Escreval("Digite a idade da ", i, "a pessoa:")
+      Leia(idade[i])
+      soma <- soma + idade[i]
+      Se(idade[i] > maiorIdade)entao
+         maiorIdade <- idade[i]
+      FimSe
+      LimpaTela
+   fimPara
+   media <- soma / 8
+   Escreval("A média das idades digitadas é: ", media)
+   para i <- 1 ate 8 faca
+      Se(idade[i] > 25)entao
+         Escreval("Na posição ", i, " do vetor temos uma pessoa com mais de 25 anos")
+      FimSe
+   fimPara
+   Escreval("A maior idade digitada foi: ", maiorIdade)
+   para i <- 1 ate 8 faca
+      Se(idade[i] = maiorIdade)entao
+         Escreval("Na posição ", i, " do vetor foi digitada a maior idade")
+      FimSe
+   fimPara
+Fimalgoritmo
