@@ -1,0 +1,18 @@
+Algoritmo "vetor"
+
+Var
+   vet5: vetor[1..10] de inteiro
+   i: inteiro
+Inicio
+   Escreval("_________________________________________________")
+   para i <- 1 ate 10 faca
+      Se(i % 2 = 1)entao
+         vet5[i] <- 5
+      Senao
+         vet5[i] <- 3
+      FimSe
+      Escreva(vet5[i], " | ")
+   fimpara
+   Escreval()
+   Escreval("_________________________________________________")
+Fimalgoritmo
