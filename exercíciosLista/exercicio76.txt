@@ -1,0 +1,15 @@
+Algoritmo "vetor"
+
+Var
+   vet7: vetor[1..7] de inteiro
+   i: inteiro
+Inicio
+   para i <- 1 ate 7 faca
+      Aleatorio 1, 100
+      Leia(vet7[i])
+   fimPara
+   LimpaTela
+   para i <- 1 ate 7 faca
+      Escreva(vet7[i], " | ")
+   fimPara
+Fimalgoritmo
