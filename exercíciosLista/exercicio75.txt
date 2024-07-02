@@ -1,0 +1,20 @@
+Algoritmo "vetor"
+
+Var
+   vetFibonacci: vetor[1..15] de inteiro
+   i: inteiro
+Inicio
+   vetFibonacci[1] <- 1
+   vetFibonacci[2] <- 1
+   escreva(vetFibonacci[1])
+   escreva(vetFibonacci[2])
+   para i <- 3 ate 15 faca
+      vetFibonacci[i] <- vetFibonacci[i - 2] + vetFibonacci[i - 1]
+      escreva(vetFibonacci[i])
+      Se(i < 15)entao
+         vetFibonacci[i + 1] <- vetFibonacci[i]
+      FimSe
+   fimpara
+   Escreval()
+   Escreval("_________________________________________________")
+Fimalgoritmo
