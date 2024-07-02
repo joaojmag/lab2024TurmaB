@@ -1,0 +1,32 @@
+Algoritmo "vetor"
+
+Var
+   vet: vetor[1..20] de inteiro
+   i, j, auxiliar: inteiro
+
+Inicio
+   Para i <- 1 ate 20 faca
+      Aleatorio 0,99
+      Leia(vet[i])
+   FimPara
+   LimpaTela
+   Escreval("Vetor da maneira que foi sorteado: ")
+   Para i <- 1 ate 20 faca
+      Escreva(vet[i], " | ")
+   FimPara
+   Para i <- 1 ate 20 faca
+      Para j <- 1 ate 20 faca
+         Se (vet[i] < vet[j])entao
+            auxiliar <- vet[i]
+            vet[i] <- vet[j]
+            vet[j] <- auxiliar
+         FimSe
+      FimPara
+   FimPara
+   Escreval()
+   Escreval()
+   Escreval("Vetor organizado: ")
+   Para i <- 1 ate 20 faca
+      Escreva(vet[i], " | ")
+   FimPara
+Fimalgoritmo
