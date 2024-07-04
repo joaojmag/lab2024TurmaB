@@ -1,12 +1,9 @@
 algoritmo "Exercicio 2"
 var
-N1,N2,S:inteiro
+nome:caractere
+
 inicio
-      escreva("Eae colega! Por favor, digite um numero:")
-      leia(N1)
-      escreva("Agora digite o segundo numero:")
-      leia(N2)
-      S<-N1+N2
-      Escreva("A soma entre ",N1, " e ",N2, " é:",S )
-      
+escreval("Qual seu nome?")
+leia(nome)
+escreval("Muito prazer ",nome)
 fimalgoritmo
