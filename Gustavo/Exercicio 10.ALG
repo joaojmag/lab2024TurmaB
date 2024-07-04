@@ -1,16 +1,9 @@
-algoritmo "creuza emprestimo"
+algoritmo "creuza3= graus"
 var
-   v,j,vpar:real
-   p:inteiro
+   F,C:real
 inicio
-      escreval("Preciso de um emprestimo de")
-      leia(v)
-      escreval("Qual a porcentagem dos juros?")
-      leia(j)
-      escreval("Em quantas parcelas?")
-      leia(p)
-      v<-(v*j/100)+v
-      vpar<-v/p
-      escreva("Você vai pagar ", p ," parcelas de: ",vpar, " totalizando R$:", v)
-      
+      escreva("Qual a temperatura?")
+      leia(F)
+      C<-(F - 32)/1.8
+      Escreva("Em graus esta:",C)
 fimalgoritmo

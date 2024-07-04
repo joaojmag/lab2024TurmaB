@@ -1,54 +1,27 @@
-algoritmo "FUTEBOL"
-
+algoritmo "Calculo de IMC"
 var
-
-   T1,T2,S:caractere
-
-   g1,g2,sg:inteiro
-
+   M,A,I:real
 inicio
-
-   escreval("------------------------------------------")
-
-   escreval("   QUAL O NOME DO PRIMEIRO TIME ? ")
-
-   escreval("------------------------------------------")
-
-   leia(t1)
-
-   escreval("------------------------------------------")
-
-   escreval("      QUAL O NOME DO SEGUNDO TIME?          ")
-
-   escreval("------------------------------------------")
-
-   leia (t2)
-
-
-
-   escreval("Quantos o ", t1 , " fez de gols?")
-
-   Leia(g1)
-
-   escreval("Quantos o ", t2 , " fez de gols?")
-
-   leia(g2)
-
-   Se (g1>g2) entao
-      sg<-(g1-g2)
+   escreva("Massa(Kg):")
+   leia(M)
+   escreva("Sua altura(M):")
+   leia(A)
+   I<-M / (A*A)
+   Escreval("IMC:",I:5:2)
+   se (I<=24.9) e (I>=18.5)Entao
+      escreval("Parabens!!Você está no peso ideal. Natural ou Fake natty??")
    senao
-      sg<-(g2-g1)
+      se(I<=17) entao
+         escreva("Pode Comer mais")
+      senao
+         se (I<=18.5) entao
+            escreval("abaixo do peso")
+         senao
+            se (I>=25) e (I>=30) entao
+               escreval("Esta em Sobrepeso")
+            fimse
+         fimse
+      fimse
    fimse
-   escrevaL("A DIFERENÇA:",sg)
-   escolha sg
-   caso 0
-     S<- "EMPATE"
-
-   caso 1, 2, 3
-     S<-"JOGO NORMAL"
-
-   outrocaso
-     S<-"AMASSSOUU"
-   fimescolha
-   escreval("STATUS:", S)
 fimalgoritmo
+

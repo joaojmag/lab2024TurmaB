@@ -1,34 +1,16 @@
-algoritmo "APROVEITAMENTO DO ALUNO"
+algoritmo "creuza emprestimo"
 var
-   P,S,M:real
-   A,D,C,B,R:caractere
+   v,j,vpar:real
+   p:inteiro
 inicio
-   escreval("----------------------")
-   escreval("  ESCOLINHA DO RAIO"   )
-   escreval("----------------------")
-   Escreva("Primeira Nota:")
-   leia(P)
-   escreva("Segunda Nota:")
-   leia(S)
-   M<-(P+S)/2
-
-
-
-
-
-   escreval("----------------------")
-   escreval("Media:" ,M:4:2)
-   se (M=1) e (M=2) e (M=3) e (M=4)  entao
-      escreval("APROVEITAMENTO: D")
-   fimse
-   se (M=5) entao
-      escreval("APROVEITAMENTO: C")
-   fimse
-   se (M=6)e (M=7) entao
-      escreval("APROVEITAMENTO: B")
-   fimse
-   se (M>=8) entao
-      escreval("APROVEITAMENTO: A")
-   fimse
-   escreval("----------------------")
+      escreval("Preciso de um emprestimo de")
+      leia(v)
+      escreval("Qual a porcentagem dos juros?")
+      leia(j)
+      escreval("Em quantas parcelas?")
+      leia(p)
+      v<-(v*j/100)+v
+      vpar<-v/p
+      escreva("Você vai pagar ", p ," parcelas de: ",vpar, " totalizando R$:", v)
+      
 fimalgoritmo
