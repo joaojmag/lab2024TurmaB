@@ -1,29 +1,30 @@
-algoritmo "Exercicio 22"
+algoritmo "Exercicio16"
 var
-divisivel,cont:inteiro
-numero,media,pares,nulos,soma:real
-
+   N1,N2,Med:real
 inicio
-      para cont<-1 ate 5 faca
-           escreval("Digite o ",cont,"º valor")
-           leia(numero)
-           se (numero=0) entao
-              nulos<-nulos+1
-           fimse
-           se (numero%5)=0 entao
-              divisivel<-divisivel+1
-           fimse
-           
-           se (numero%2)=0 entao
-              pares<-numero+pares
-           fimse
-           soma<-soma+numero
-      fimpara
-      media<-soma/5
-      escreval("Soma dos valores:",soma)
-      escreval("Média dos valores:",media)
-      escreval("Valores divisiveis por cinco:",divisivel)
-      escreval("Valores nulos:",nulos)
-      escreval("Soma dos valores pares:",pares)
-      
+   escreva("Digite a primeira nota do aluno:")
+   leia(N1)
+   escreva("Digite a segunda nota do aluno:")
+   leia(N2)
+   Med<-(N1+N2)/2
+   se (Med>=9) entao
+      escreval("APROVEITAMENTO: A")
+   senao
+      se (Med<9) e (Med<8) entao
+         escreval("APROVEITAMENTO: B")
+      senao
+         se (Med<7) e (Med<6) entao
+            escreval("APROVEITAMENTO: C")
+         senao
+            se (Med<5) e (Med<4) entao
+               escreval("APROVEITAMENTO: D")
+            senao
+                 se (Med<3) e (Med<2) entao
+                    escreval("APROVEITAMENTO: F")
+                 fimse
+            fimse
+         fimse
+      fimse
+   fimse
+   Escreval("A média do aluno foi:" ,Med) 
 fimalgoritmo
