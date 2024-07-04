@@ -1,26 +1,27 @@
-algoritmo "exercicio 21"
+algoritmo "Salario"
 var
-
-n1,n2,n3,cont:inteiro
-
+N:caractere
+D:inteiro
+S,NS:real
 inicio
-
-      n1<-0
-
-      n2<-1
-
-      n3<-1
-
-      para cont<-1 ate 10 faca
-
-           escreva(n1)
-
-           n3<-n1+n2
-
-           n1<-n2
-
-           n2<-n3
-
-      fimpara
-
+      escreval("Qual o seu nome na empresa?")
+      leia(N)
+      escreva("Qual seu salario? R$:")
+      leia(S)
+      escreval("Quantos dependentes você tem?")
+      leia(D)
+      escolha D
+              Caso 0
+                   NS<-S+(S*5/100)
+              caso 1,2
+                   NS<-S+(S*10/100)
+              caso 3,4,5
+                   NS<-S+(S*15/100)
+              caso 6,7
+                    NS<-S+(S*20/100)
+              Outrocaso
+                    NS<-S+(S*30/100)
+      fimescolha
+      
+      escreval(N , ".Seu salario mais os seus dependentes vai ser de R$:" ,NS )
 fimalgoritmo
