@@ -1,6 +1,6 @@
 algoritmo "semnome"
 var
-   vet: vetor [1..3] de real
+
    contador: inteiro
    numero: vetor [1..3] de real
    multiplos: vetor [1..3] de real
