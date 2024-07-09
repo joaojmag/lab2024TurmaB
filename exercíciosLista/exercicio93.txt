@@ -1,0 +1,24 @@
+Algoritmo "procedimentoContagem"
+
+procedimento contagem(a, b, c: inteiro)
+Var
+   i: inteiro
+inicio
+   Para i <- a ate b passo c faca
+      Escreva(i, ", ")
+   FimPara
+   Escreva("FIM")
+fimProcedimento
+
+Var
+   numero1, numero2, numeroMais: inteiro
+Inicio
+   Escreval("Escreva o número que deseja iniciar a contagem: ")
+   Leia(numero1)
+   Escreval("Escreva o número que deseja finalizar a contagem: ")
+   Leia(numero2)
+   Escreval("Escreva o número que deseja usar de incremento: ")
+   Leia(numeroMais)
+   LimpaTela
+   contagem(numero1, numero2, numeroMais)
+Fimalgoritmo
