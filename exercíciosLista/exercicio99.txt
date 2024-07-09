@@ -1,0 +1,28 @@
+Algoritmo "funcaoPotencia"
+
+funcao potencia(a, b: inteiro): inteiro
+Var
+   i, total: inteiro
+Inicio
+   total <- 1
+   Para i <- 1 ate b faca
+      total <- total * a
+   fimPara
+   Retorne total
+FimFuncao
+
+Var
+   numero1, numero2, resultado: inteiro
+
+inicio
+   Escreval("Digite a base: ")
+   Leia(numero1)
+   Escreval("Digite o expoente: ")
+   Leia(numero2)
+   resultado <- potencia(numero1, numero2)
+   LimpaTela
+   Escreval("Base: ", numero1)
+   Escreval("Expoente: ", numero2)
+   Escreval("-------------------------------------------")
+   Escreval("O resultado é: ", resultado)
+Fimalgoritmo
