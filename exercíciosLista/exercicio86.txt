@@ -1,0 +1,12 @@
+Algoritmo "procedimentoMundo"
+
+Var
+procedimento mundo
+inicio
+   Escreval("+-----------------+")
+   Escreval("Olá Mundo!")
+   Escreval("+-----------------+")
+fimProcedimento
+Inicio
+   mundo()
+Fimalgoritmo
