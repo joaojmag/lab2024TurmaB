@@ -1,0 +1,19 @@
+Algoritmo "procedimentoSoma"
+
+procedimento total(a, b: real)
+Var
+   soma: real
+inicio
+   soma <- a + b
+   Escreval("A soma de ", a, " e ", b, " é ", soma)
+fimProcedimento
+Var
+   numero1, numero2: real
+Inicio
+   Escreval("Escreva o o primeiro número que deseja somar: ")
+   Leia(numero1)
+   Escreval("Escreva o segundo número que deseja somar: ")
+   Leia(numero2)
+   LimpaTela
+   total(numero1, numero2)
+Fimalgoritmo
