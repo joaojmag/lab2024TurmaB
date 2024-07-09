@@ -1,0 +1,26 @@
+Algoritmo "procedimentoFibonacci
+
+procedimento fibonacci(a: inteiro)
+Var
+   numero1, numero2, numero3, i: inteiro
+Inicio
+   numero1 <- 1
+   Escreva(numero1, ">>")
+   numero2 <- 1
+   Escreva(numero2, ">>")
+   Para i <- 3 ate a faca
+      numero3 <- numero1 + numero2
+      Escreva(numero3, ">>")
+      numero1 <- numero2
+      numero2 <- numero3
+   FimPara
+   Escreva("FIM")
+fimProcedimento
+
+Var
+   quantidade: inteiro
+Inicio
+   Escreval("Escreva quantos números da sequência de Fibonacci deseja ver")
+   Leia(quantidade)
+   fibonacci(quantidade)
+Fimalgoritmo
