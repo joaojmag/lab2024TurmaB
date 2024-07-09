@@ -1,0 +1,22 @@
+Algoritmo "funcaoMedia"
+
+funcao media(a, b: real): real
+Var
+m: real
+Inicio
+   m <- (a + b) / 2
+   Retorne m
+FimFuncao
+
+Var
+   numero1, numero2, resultado: real
+
+inicio
+   Escreval("Digite sua primeira nota: ")
+   Leia(numero1)
+   Escreval("Digite sua segunda nota: ")
+   Leia(numero2)
+   resultado <- media(numero1, numero2)
+   LimpaTela
+   Escreval("A média das notas ", numero1, " e ", numero2, " é ", resultado)
+Fimalgoritmo
