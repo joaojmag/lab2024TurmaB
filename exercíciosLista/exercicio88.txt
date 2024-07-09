@@ -1,0 +1,30 @@
+Algoritmo "procedimentoContagem"
+
+Var
+   msg: caractere
+   vezes: inteiro
+
+procedimento bordas
+inicio
+   Escreval("+-----------------+")
+fimProcedimento
+
+procedimento contagem(a: inteiro)
+Var
+   i: inteiro
+inicio
+   bordas()
+   Para i <- 1 ate a faca
+      Escreval(msg)
+   FimPara
+   bordas()
+fimProcedimento
+
+Inicio
+   Escreval("Digite a mensagem que deseja exibir:")
+   Leia(msg)
+   Escreval("Quantas vezes deseja exibir?")
+   Leia(vezes)
+   LimpaTela
+   contagem(vezes)
+Fimalgoritmo
