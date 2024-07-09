@@ -1,16 +1,21 @@
 algoritmo "Exercicio 88"
+
 var
-msg:caractere
-procedimento gerador(a:caractere)
+
+cont:inteiro
+b:inteiro
+procedimento gerador(a:caractere )
 inicio
       escreval("+-------=======------+")
+      para b<-1 ate cont faca
       escreval(a)
-      escreval(a)
-      escreval(a)
-      escreval(a)
+      fimpara
       escreval("+-------=======------+")
 fimprocedimento
-inicio
 
+inicio
+      escreval("Quer ver ate quantas vezes?")
+      leia(cont)
       gerador("Aprendendo portugol")
+
 fimalgoritmo
