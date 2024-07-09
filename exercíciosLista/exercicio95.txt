@@ -1,0 +1,21 @@
+Algoritmo "funcaoSoma"
+
+funcao soma(a, b: real): real
+Var
+somando: real
+Inicio
+   somando <- a + b
+   Retorne somando
+FimFuncao
+
+Var
+   numero1, numero2, resultado: real
+
+inicio
+   Escreval("Digite o primeiro número que deseja somar: ")
+   Leia(numero1)
+   Escreval("Digite o segundo número que deseja somar: ")
+   Leia(numero2)
+   resultado <- soma(numero1, numero2)
+   Escreval("O resultado da soma de ", numero1, " e ", numero2, " é: ", resultado)
+Fimalgoritmo
