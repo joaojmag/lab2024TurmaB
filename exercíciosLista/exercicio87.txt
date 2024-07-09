@@ -1,0 +1,17 @@
+Algoritmo "procedimentoParametro"
+
+Var
+   msg: caractere
+   
+procedimento parametro(a: caractere)
+inicio
+   Escreval("+-----------------+")
+   Escreval(a)
+   Escreval("+-----------------+")
+fimProcedimento
+Inicio
+   Escreval("Digite a mensagem que deseja exibir:")
+   Leia(msg)
+   LimpaTela
+   parametro(msg)
+Fimalgoritmo
