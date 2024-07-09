@@ -1,0 +1,41 @@
+Algoritmo "funcaoMedia"
+
+funcao media(a, b: real): real
+Var
+   m: real
+Inicio
+   m <- (a + b) / 2
+   Retorne m
+FimFuncao
+
+funcao aprov(a: real): caractere
+Var
+   passou: caractere
+Inicio
+   Se(a > 7)entao
+      passou <- "Aluno Aprovado"
+   Senao
+      Se(a > 4)entao
+         passou <- "Aluno em Recuperação"
+      Senao
+         passou <- "Aluno Reprovado"
+      FimSe
+   FimSe
+   Retorne passou
+FimFuncao
+
+Var
+   numero1, numero2, resultado: real
+   aprovado: caractere
+
+inicio
+   Escreval("Digite sua primeira nota: ")
+   Leia(numero1)
+   Escreval("Digite sua segunda nota: ")
+   Leia(numero2)
+   resultado <- media(numero1, numero2)
+   LimpaTela
+   Escreval("A média das notas ", numero1, " e ", numero2, " é ", resultado)
+   aprovado <- aprov(resultado)
+   Escreval(aprovado)
+Fimalgoritmo
