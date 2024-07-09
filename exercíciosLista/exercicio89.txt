@@ -1,0 +1,41 @@
+Algoritmo "procedimentoBordas"
+
+Var
+   msg: caractere
+   vezes, bordinha: inteiro
+
+procedimento bordas(a: inteiro)
+inicio
+   Escolha a
+   Caso 1
+      Escreval("+-------=======------+")
+   Caso 2
+      Escreval("~~~~~~~:::::::~~~~~~~")
+   Caso 3
+      Escreval("<<<<<<<<------->>>>>>>")
+   FimEscolha
+fimProcedimento
+procedimento contagem(a: inteiro)
+Var
+   i: inteiro
+inicio
+   bordas(bordinha)
+   Para i <- 1 ate a faca
+      Escreval(msg)
+   FimPara
+   bordas(bordinha)
+fimProcedimento
+
+Inicio
+   Escreval("Digite a mensagem que deseja exibir:")
+   Leia(msg)
+   Escreval("Quantas vezes deseja exibir?")
+   Leia(vezes)
+   Escreval("Qual borda você quer:")
+   Escreval("Digite 1 para +-------=======------+")
+   Escreval("Digite 2 para ~~~~~~~:::::::~~~~~~~")
+   Escreval("Digite 3 para <<<<<<<<------->>>>>>>")
+   Leia(bordinha)
+   LimpaTela
+   contagem(vezes)
+Fimalgoritmo
