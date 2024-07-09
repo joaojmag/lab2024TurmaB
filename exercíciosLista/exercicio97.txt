@@ -1,0 +1,36 @@
+Algoritmo "funcaoMaior"
+
+funcao maior(a, b, c: real): real
+Var
+   m: real
+Inicio
+   Se((a > b) e (a > c))entao
+      m <- a
+   Senao
+      Se((b > a) e (b > c))entao
+         m <- b
+      Senao
+         Se((c > a) e (c > b))entao
+            m <- c
+         FimSe
+      FimSe
+   FimSe
+   Retorne m
+FimFuncao
+
+Var
+   numero1, numero2, numero3, resultado: real
+
+inicio
+   Escreval("Digite o primeiro numero para comparação: ")
+   Leia(numero1)
+   Escreval("Digite o segundo numero para comparação: ")
+   Leia(numero2)
+   Escreval("Digite o terceiro numero para comparação: ")
+   Leia(numero3)
+   resultado <- maior(numero1, numero2, numero3)
+   LimpaTela
+   Escreval("Números digitados: ", numero1, ", ", numero2, ", ",numero3)
+   Escreval("-------------------------------------------")
+   Escreval("O maior número digitado foi: ", resultado)
+Fimalgoritmo
