@@ -1,0 +1,27 @@
+Algoritmo "funcaoSomador"
+
+funcao superSoma(a, b: inteiro): inteiro
+Var
+   soma, i: inteiro
+Inicio
+   soma <- 0
+   Para i <- a ate b faca
+      soma <- soma + i
+   fimPara
+   Retorne soma
+FimFuncao
+
+Var
+   numero1, numero2, resultado: inteiro
+
+inicio
+   Escreval("Digite o primeiro numero: ")
+   Leia(numero1)
+   Escreval("Digite o segundo numero: ")
+   Leia(numero2)
+   resultado <- superSoma(numero1, numero2)
+   LimpaTela
+   Escreval("Números digitados: ", numero1, " e ", numero2)
+   Escreval("-------------------------------------------")
+   Escreval("A soma dos números entre eles é igual a: ", resultado)
+Fimalgoritmo
