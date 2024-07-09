@@ -1,0 +1,27 @@
+Algoritmo "procedimentoCompara"
+
+procedimento compara(a, b: real)
+inicio
+   Se(a > b)entao
+      Escreval("O número ", a, " é maior do que o número ", b)
+   Senao
+      Se(b > a)entao
+         Escreval("O número ", b, " é maior do que o número ", a)
+      Senao
+         Se(a = b)entao
+            Escreval("Os números são iguais")
+         FimSe
+      FimSe
+   FimSe
+fimProcedimento
+
+Var
+   numero1, numero2: real
+Inicio
+   Escreval("Escreva o primeiro número que deseja comparar: ")
+   Leia(numero1)
+   Escreval("Escreva o segundo número que deseja comparar: ")
+   Leia(numero2)
+   LimpaTela
+   compara(numero1, numero2)
+Fimalgoritmo
