@@ -1,0 +1,19 @@
+Algoritmo "procedimentoPar"
+
+procedimento parImpar(a: inteiro)
+inicio
+   Se(a % 2 = 0)entao
+      Escreval("O número ", a, " é par")
+   Senao
+      Escreval("O número ", a, " é ímpar")
+   FimSe
+fimProcedimento
+
+Var
+   numero: inteiro
+Inicio
+   Escreval("Escreva o número que deseja saber se é par ou ímpar: ")
+   Leia(numero)
+   LimpaTela
+   parImpar(numero)
+Fimalgoritmo
