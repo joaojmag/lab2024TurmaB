@@ -10,7 +10,7 @@ var
    posicaoMaiorNota: real
 
 inicio
-   para contador <- 1 ate 8 faca
+   para contador <- 1 ate 10 faca
       escreval ("Qual a nota do ", contador, "° aluno?")
       leia (nota[contador])
       escreval ("------------------------------------")
@@ -19,9 +19,9 @@ inicio
    
    escreval ("------------------------------------")
    
-    media <- notaTotal / 8
+    media <- notaTotal / 10
    
-   para contador <- 1 ate 8 faca
+   para contador <- 1 ate 10 faca
       se (nota[contador] > media) entao
          acimaMedia <- acimaMedia + 1
       fimse
@@ -31,7 +31,7 @@ inicio
       fimse
    fimpara
    
-   para contador <- 1 ate 8 faca
+   para contador <- 1 ate 10 faca
       se (contador = 1)  entao
          maiorNota <- nota[contador]
       fimse
