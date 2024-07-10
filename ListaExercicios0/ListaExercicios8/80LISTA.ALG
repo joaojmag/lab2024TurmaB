@@ -1,18 +1,23 @@
 algoritmo "80Lista"
 var
-   n: vetor [1..10] de inteiro
    cont: inteiro
+   numeros: vetor [1..30] de real
+   principal, repete: real
 inicio
-      para cont <- 1 ate 10 faca
-          leia(n[cont])
-          fimpara
-      //
-      escreval ("pares estao destacados com parenteses:")
-   para cont <- 10 ate 1 passo -1 faca
-   se n[cont] mod 2 = 0 entao
-      escreva (" (",n[cont],") [",cont,"]")
-      senao
-      escreva(n[cont],"[", cont,"]")
-    fimse
-   fimpara
+     para cont <- 1 ate 30 faca
+        aleatorio 1, 15
+        leia (numeros[cont])
+        aleatorio off
+     fimpara
+
+     escreval ("Digite um numero: ")
+     leia (principal)
+
+     para cont <- 1 ate 30 faca
+        se (principal = numeros[cont]) entao
+            escreval ("POSICAO DO NUMERO: ", cont, ".")
+            repete <- repete + 1
+        fimse
+     fimpara
+         escreval ("REPETICOES: ", repete, ".")
 fimalgoritmo
