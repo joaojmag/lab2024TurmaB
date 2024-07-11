@@ -11,7 +11,7 @@ inicio
       leia (nome[cont])
       escreval ("salario: ")
       leia (salario[cont])
-      escreval ("qual seu sexo? 1) homem (2) mulher")
+      escreval ("qual seu sexo? (1) homem (2) mulher")
       leia (sexo[cont])
    fimpara
   limpatela
