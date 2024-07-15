@@ -1,7 +1,7 @@
 algoritmo "semnome"
 var
    contador, termos: inteiro
-   primeiroTermo, segundoTermo, terceiroTermo, sequencia: real
+   primeiroTermo, segundoTermo, terceiroTermo: real
    
 procedimento fibonacci (quantidade: inteiro)
 inicio
