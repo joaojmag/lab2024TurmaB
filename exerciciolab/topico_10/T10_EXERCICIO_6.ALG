@@ -19,7 +19,7 @@ funcao situacao(a:real):real
 var
   situ:inteiro
 inicio
-   se( a > 7 )entao
+   se( a >= 7 )entao
     situ <- 1
    fimse
    se(a < 7) e ( a >=5) entao
