@@ -15,19 +15,25 @@ Inicio
 fimfuncao
 
 //-----------------------------------------------------------------------------//
-funcao situacao(a:real):logico
+funcao situacao(a:real):real
 var
-  situ:logico
+  situ:inteiro
 inicio
-   se( a >= 6 )entao
-      situ <- verdadeiro
+   se( a > 7 )entao
+    situ <- 1
+   fimse
+   se(a < 7) e ( a >=5) entao
+    situ <- 2
+   fimse
+   se( a < 5) entao
+    situ <- 3
    fimse
    retorne situ
 fimfuncao
 //----------------------------------------------------------------------------//
 var
   resp,n1,n2:real
-  aprov:logico
+  aprov:real
 inicio
       escreva("insira numero para media ")
       leia(n1)
@@ -35,12 +41,15 @@ inicio
       leia(n2)
       resp <- media(n1,n2)
       aprov<-situacao(resp)
-      se(aprov = verdadeiro) entao
-       escreva(" o aluno foi aprovado com a nota",resp)
-      senao
-       escreva(" o aluno foi reprovado com a nota ",resp)
-      fimse
-
-
+      escolha aprov
+       caso 1
+        escreva(" o aluno foi aprovado com a nota :",resp)
+       caso 2
+        escreva(" o aluno ficou de recuperação com a nota :",resp)
+       caso 3
+        escreva(" o aluno foi reprovado com a nota :",resp)
+       outrocaso
+        escreva(" erro ")
+      fimescolha
 
 Fimalgoritmo
