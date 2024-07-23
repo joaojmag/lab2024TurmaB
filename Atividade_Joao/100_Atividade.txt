@@ -1,0 +1,43 @@
+algoritmo "semnome"
+
+var
+
+A, B,aprv,m,primeiro, segundo: real
+
+sit: caractere
+
+Funcao Media(A, B: real):real
+
+inicio
+
+   m <- (A + B) / 2
+   retorne m
+fimfuncao
+Funcao Situacao(n: real): caractere
+inicio
+   se(n >= 7)entao
+      retorne ("APROVADO")
+   fimse
+   se(n > 5) e (n <= 7)entao
+      retorne("RECUPERAÇÃO")
+   fimse
+   se(n <=5)entao
+      retorne("REPROVADO")
+   fimse
+FimFuncao
+Inicio
+   EscrevaL("Escreva o primeiro valor")
+
+   leia(primeiro)
+
+   EscrevaL("Escreva o segundo valor")
+
+   leia(segundo)
+
+   aprv <- Media(primeiro,segundo)
+   sit <- Situacao(aprv)
+
+   escreval("A sua media é: ",aprv)
+   Escreval("Você está: ",sit)
+
+fimalgoritmo
